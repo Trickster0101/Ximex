@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>UpEast Website</title>
+  <!-- Header Style CSS -->
+	<link rel="stylesheet" type="text/css" href="css/basic.css" />
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/basic.js"></script>
+	<script src="js/slideshow.js"></script>
+
+</head>
+<body onLoad="showSlides(slideIndex);;">
+	<!-- Parallax Header -->
+	<div id="parallax-container" class="row parallax-container">
+	  <div class="parallax-container" style="background-image: url('images/building_parallax3.jpg')">
+			<div class="row">
+				<div class="col-4 header-logo">
+
+				</div>
+
+				<header class="col-4 header-logo">
+						<img src="images/UPEAST/UPEAST LOGO vertical copy2.png"  />
+				</header>
+
+				<div class="col-4 header-logo">
+
+				</div>
+			</div>
+
+			<!--Bottom Navigation Bar -->
+			<nav id="nav_bar" class="bottom-nav">
+				<ul class="topnav" id="myTopnav">
+				  <li><a id="home" class="tablinks">Home</a></li>
+					<li><a id="aboutus" class="tablinks">About Us</a></li>
+				  <li><a id="services" class="tablinks">Services</a></li>
+				  <li><a id="business_profile" class="tablinks">Company Profile</a></li>
+				  <li><a id="contact_us" class="tablinks">Contact Us</a></li>
+				  <li class="icon">
+				    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+				  </li>
+				</ul>
+			</nav>
+			<!-- End of bottom Navigation Bar -->
+
+		</div>
+	</div>
+	<!-- End of Parallax Header -->
+
+	<div id="our-company" class="row company" >
+		<div class="col-12 body-company" >
+			<div id="myModal" class="modal">
+
+				<div class="row" style="margin-bottom: 5%;">
+					<div class="col-12 heading-company">
+						<h1>OUR COMPANY</h1>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-6" style="padding: 0% 2%;">
+						<div class="row">
+							<div class="col-12 heading-company">
+								<h1 style="margin-top: 5%;">UPEAST Security Agency, Inc.</h1>
+								<p style="text-align: center">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						</div>
+
+						<div class="row" style="margin-top: 10%;">
+							<div class="col-6 heading-company">
+								<h1>Mission</h1>
+								<p style="text-align: center; padding-left: 15%; padding-right: 15%;">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+
+							<div class="col-6 heading-company" >
+								<h1 style="margin-top: 5%;">Vision</h1>
+								<p style="text-align: center; padding-left: 15%; padding-right: 15%;">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-6" style="padding: 0% 2%;">
+						<!-- Slideshow here -->
+						<div class="row slideshow">
+								<div id="myModal" class="row modal">
+								  <div class="col-12 modal-content">
+									    <div class="mySlides">
+									      <img src="images/secu_1.jpg" style="width:100%">
+									    </div>
+
+											<div class="mySlides">
+									      <img src="images/secu_2.jpg" style="width:100%">
+									    </div>
+											<div class="mySlides">
+									      <img src="images/secu_3.jpg" style="width:100%">
+									    </div>
+											<div class="mySlides">
+									      <img src="images/secu_7.jpg" style="width:100%">
+									    </div>
+								    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+								    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+										<div class="column">
+								      <img class="demo cursor" src="images/secu_1.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+								    </div>
+										<div class="column">
+								      <img class="demo cursor" src="images/secu_2.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+								    </div>
+										<div class="column">
+								      <img class="demo cursor" src="images/secu_3.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+								    </div>
+										<div class="column">
+								      <img class="demo cursor" src="images/secu_7.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+								    </div>
+								  </div>
+							</div>
+						</div>
+						<!-- End of slideshow -->
+					</div>
+				</div>
+		  </div>
+		</div>
+	</div>
+</body>
+
+<script>
+  $("#aboutus").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#our-company").offset().top
+    }, 2000);
+  });
+
+  $("#services").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#our-company").offset().top
+    }, 2000);
+  });
+
+  $("#home").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#parallax-container").offset().top
+    }, 2000);
+  });
+
+  $("#business_profile").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#our-company").offset().top
+    }, 2000);
+  });
+
+  $("#contact_us").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#our-company").offset().top
+    }, 2000);
+  });
+
+	$(document).ready(function() {
+
+	  $(window).scroll(function () {
+	      //if you hard code, then use console
+	      //.log to determine when you want the
+	      //nav bar to stick.
+	      console.log($(window).scrollTop())
+	    if ($(window).scrollTop() >= $("#our-company").offset().top) {
+	      $('#nav_bar').addClass('bottom-fixed');
+	    }
+	    if ($(window).scrollTop() < $("#our-company").offset().top) {
+	      $('#nav_bar').removeClass('bottom-fixed');
+	    }
+	  });
+	});
+</script>
+
+</html>

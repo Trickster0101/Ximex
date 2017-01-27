@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>UpEast Website</title>
+  <!-- Header Style CSS -->
+	<link rel="stylesheet" type="text/css" href="css/basic.css" />
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+  <div class="row">
+    <div class="col-4" style="border: 1px solid black; height: 50px;">
+      <div class="line" style="border: 1px solid red;">
+      </div>
+    </div>
+
+    <div class="col-4 header" style="border: 1px solid blue">
+      <img src="images/UPEAST/UPEAST LOGO horizontal copy smaller.png" />
+    </div>
+
+    <div class="col-4" style="border: 1px solid black; height: 50px;">
+      <div class="line" style="border: 1px solid red;">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

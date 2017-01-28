@@ -5,18 +5,24 @@
 	margin: 0;
 }
 
+@font-face{
+    font-family: "Myriad";
+    src: url('Fonts/MyriadPro-Regular.otf'),
+    url('Fonts/MyriadPro-Regular.otf'); /* IE */
+}
+
 html
 {
 	height: 100%;
-	font-family: "Lucida Sans", sans-serif;
+  font-family: "Myriad";
 }
 
 body
 {
 	height: 100%;
-	font-family: "Lucida Sans", sans-serif;
 	margin:0;
 	background: #eff1f4;
+  font-family: "Myriad";
 }
 
 p
@@ -78,7 +84,8 @@ h1
 /* Header */
 
 .parallax-container {
-  height:100%;
+  width: 100%;
+  height: 100%;
   position: relative;
   background-attachment: fixed;
   background-position: center;
@@ -86,17 +93,43 @@ h1
   background-size: cover;
 }
 
-.header-logo img{
-  display: block;
-  margin: 0 auto;
+.header-logo {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
-.header-logo {
-  position: relative;
-  margin: 0 auto;
-  align-self: center;
+.header-logo img {
+  height: 10%;
+  display: block;
+}
+
+.header-caption {
+  font-family: "Myriad";
+  width: 100%;
+  height: 80%;
+  padding: 15%;
+}
+
+.header-caption h2{
+  font-family: "Myriad";
+  font-size: 50px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  text-shadow: 5px 5px 15px black;
+}
+
+.header-caption p{
+  font-family: "Myriad";
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  text-shadow: 2px 2px 15px black;
 }
 
 .bottom-nav {
@@ -120,7 +153,7 @@ ul.topnav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: white;
+  background-color: #233d91;
 }
 
 ul.topnav-smaller {
@@ -128,9 +161,16 @@ ul.topnav-smaller {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: white;
+  background-color: #233d91;
 }
 
+ul.topnav-fixed {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #233d91;
+}
 ul.topnav li {
   float: center;
   display: inline-block;
@@ -138,18 +178,17 @@ ul.topnav li {
 
 ul.topnav li a {
   display: inline-block;
-  color: black;
   text-align: center;
-  padding: 14px 30px;
+  padding: 15px 30px;
   text-decoration: none;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 14px;
+  color: white;
 }
 
 ul.topnav li a:hover {
-  background-color: black;
-  color: white;
-  font-size: 30px;
+  font-size: 24px;
+  text-decoration: underline;
 }
 
 ul.topnav li.icon {display: none;}
@@ -160,19 +199,37 @@ ul.topnav li.icon {display: none;}
 .company {
   height: 100%;
   width: 100%;
-
+  border: 1px solid black;
+  background-color: white;
 }
-.heading-company h1{
-  text-align: center;
+
+.heading-company {
+  background-color: #daa520;
+  color: #233d91;
   width: 100%;
+}
+
+.heading-company-fixed{
+  background-color: #daa520;
+  width: 100%;
+  color: #233d91;
+  margin-top: 3.4%;
+}
+
+.heading-company h1{
+  text-align: left;
+  font-family: "Myriad";
+  font-size: 30px;
 }
 
 .body-company {
-  width: 100%;
-  padding: 5%;
-  height: 100%;
+  border: 1px solid black;
+  padding: 3%;
 }
 
+.body-company {
+  height: 100%;
+}
 /* Slideshow Css here */
 .slideshow {
   position: relative;
@@ -307,10 +364,6 @@ a.prev, a.next {
     top: 0;
   }
 
-  .header-logo {
-    margin: 20px;
-  }
-
   .heading-company h1
   {
     text-align: center;
@@ -336,10 +389,6 @@ a.prev, a.next {
 
   .bottom-nav {
     top: 0;
-  }
-
-  .header-logo {
-    margin: 20px;
   }
 
   .heading-company h1

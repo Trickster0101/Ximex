@@ -284,10 +284,6 @@ ul.topnav li.icon {display: none;}
 }
 
 /* Mission and Vision Modal */
-.myBTN:hover{
-  background-color: black;
-  color: white;
-}
 
 /* The Modal (background) */
 .modal {
@@ -304,6 +300,9 @@ ul.topnav li.icon {display: none;}
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+.modal-header {
+  border: 1px solid black;
+}
 /* Modal Content */
 .modal-content {
     position: relative;
@@ -343,20 +342,6 @@ ul.topnav li.icon {display: none;}
     color: #000;
     text-decoration: none;
     cursor: pointer;
-}
-
-.modal-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-}
-
-.modal-body {padding: 2px 16px;}
-
-.modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
 }
 
 /* End of Mission and Vision */

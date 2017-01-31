@@ -9,12 +9,13 @@
 	<link rel="stylesheet" type="text/css" href="C:/Projects/Web/Ximex/css/basic.css" />
 
 	<script src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/basic.js"></script>
-	<script src="js/slideshow.js"></script>
-  <script src="js/mvModal.js"></script>
 
+
+	<!--
+	<script src="js/slideshow.js"></script>
+	-->
 </head>
-<body onLoad="showSlides(slideIndex);">
+<body>
 	<!-- Parallax Header -->
 	<div id="top-home" class="row parallax-container">
 	  <div class="parallax-container" style="background-image: url('images/building_parallax6.jpg')">
@@ -75,90 +76,61 @@
       <div class="col-6 mission">
         <h1>MISSION</h1>
         <!-- Trigger/Open The Modal -->
-        <button id="myBtn" class="myBTN">Open Modal</button>
-  			<img id="myBtn" src="images/mv.png" />
+  			<img id="myBtn" src="images/mv.png" onclick="openMissionModal()"/>
       </div>
 
       <div class="col-6 vision">
         <h1>VISION</h1>
-  			<img id="myBtn" src="images/mv.png" />
+  			<img id="myBtn" src="images/mv.png" onclick="openVisionModal()"/>
       </div>
 
 
 
-      <!-- The Modal -->
-      <div id="myModal" class="modal">
-
-        <!-- Modal content -->
+      <!-- The Mission Modal -->
+      <div id="myMissionModal" class="modal">
+        <!-- Mission Modal content -->
         <div class="modal-content">
-          <div class="modal-header">
-            <span class="close">&times;</span>
-            <h2>Modal Header</h2>
+          <div class="modal-header" style="background-color: #233d91;">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Company Mission</h2>
           </div>
-          <div class="modal-body">
-            <p>Some text in the Modal Body</p>
-            <p>Some other text...</p>
-          </div>
-          <div class="modal-footer">
-            <h3>Modal Footer</h3>
+          <div class="modal-body" style="padding: 5%;">
+            <p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
           </div>
         </div>
-
       </div>
 
+			<!-- The Vision Modal -->
+      <div id="myVisionModal" class="modal">
+        <!-- Vision Modal content -->
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: #233d91">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Company Vision</h2>
+          </div>
+          <div class="modal-body" style="padding: 5%;">
+            <p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+          </div>
+        </div>
+      </div>
 	  </div>
 
   </div>
+
+	<script src="js/scroll.js"></script>
+	<script src="js/mvModal.js"></script>
+	<script src="js/basic.js"></script>
+
 </body>
-
-<script>
-  $("#aboutus").click(function() {
-    $('html, body').animate({
-      scrollTop: $("#our-company").offset().top
-    }, 2000);
-  });
-
-  $("#services").click(function() {
-    $('html, body').animate({
-      scrollTop: $("#our-company").offset().top
-    }, 2000);
-  });
-
-  $("#home").click(function() {
-    $('html, body').animate({
-      scrollTop: $("#top-home").offset().top
-    }, 2000);
-  });
-
-  $("#business_profile").click(function() {
-    $('html, body').animate({
-      scrollTop: $("#our-company").offset().top
-    }, 2000);
-  });
-
-  $("#contact_us").click(function() {
-    $('html, body').animate({
-      scrollTop: $("#our-company").offset().top
-    }, 2000);
-  });
-
-	$(document).ready(function() {
-
-	  $(window).scroll(function () {
-	      console.log($(window).scrollTop())
-	    if ($(window).scrollTop() >= $("#our-company").offset().top) {
-	      $('#nav_bar').addClass('bottom-fixed');
-				$('#myTopnav').addClass('topnav-fixed');
-				$('#heading-company').addClass('heading-company-fixed');
-	    }
-	    if ($(window).scrollTop() < $("#our-company").offset().top) {
-	      $('#nav_bar').removeClass('bottom-fixed');
-				$('#myTopnav').removeClass('topnav-fixed');
-				$('#heading-company').removeClass('heading-company-fixed');
-	    }
-	  });
-	});
-
-</script>
 
 </html>

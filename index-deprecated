@@ -7,6 +7,8 @@
 	<title>UpEast Website</title>
   <!-- Header Style CSS -->
 	<link rel="stylesheet" type="text/css" href="css/basic.css" />
+	<!-- Company Style CSS -->
+	<link rel="stylesheet" type="text/css" href="css/company.css" />
 
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/basic.js"></script>

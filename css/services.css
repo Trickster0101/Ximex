@@ -1,0 +1,93 @@
+*
+{
+  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+@font-face{
+    font-family: "Myriad";
+    src: url('Fonts/MyriadPro-Regular.otf'),
+    url('Fonts/MyriadPro-Regular.otf'); /* IE */
+}
+
+html
+{
+	height: 100%;
+  font-family: "Myriad";
+}
+
+body
+{
+	height: 100%;
+	margin:0;
+	background: #eff1f4;
+  font-family: "Myriad";
+}
+
+p
+{
+	color: Black;
+	font-size: 15px;
+}
+
+h1
+{
+	margin: 10px;
+	font-size: 20px;
+}
+
+/* Services */
+
+.services {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+/* Heading Services */
+.heading-services {
+  z-index: -100;
+  background-color: #daa520;
+  color: #233d91;
+  width: 100%;
+  height: auto;
+}
+
+.heading-services-fixed{
+  background-color: #daa520;
+  width: 100%;
+  color: #233d91;
+  margin-top: 3.4%;
+  height: auto;
+}
+
+.heading-services h1{
+  text-align: left;
+  font-family: "Myriad";
+  font-size: 30px;
+}
+
+/* End of Heading Services */
+
+.body-services {
+  border: 1px solid black;
+  height: 100%;
+}
+
+.image-services img {
+  display: inline-block;
+  border: 1px solid red;
+  max-width: 50%;
+  object-fit: contain;
+  margin: 25%;
+}
+
+.image-services {
+}
+
+/* Services Body */
+
+
+/* End of Services Body */
+/* End of Services */

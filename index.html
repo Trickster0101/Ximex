@@ -6,7 +6,11 @@
 <head>
 	<title>UpEast Website</title>
   <!-- Header Style CSS -->
-	<link rel="stylesheet" type="text/css" href="C:/Projects/Web/Ximex/css/basic.css" />
+	<link rel="stylesheet" type="text/css" href="C:/Projects/Web/UpEast 2/css/basic.css" />
+	<!-- Company Style CSS -->
+	<link rel="stylesheet" type="text/css" href="css/company.css" />
+	<!-- Services Style CSS -->
+	<link rel="stylesheet" type="text/css" href="css/services.css" />
 
 	<script src="js/jquery-3.1.1.min.js"></script>
 
@@ -35,28 +39,26 @@
 
 		</div>
 
-			<!--Bottom Navigation Bar -->
-			<nav id="nav_bar" class="bottom-nav">
-				<ul class="topnav" id="myTopnav">
-				  <li><a id="home" class="tablinks"><b>HOME</b></a></li>
-					<li><a id="aboutus" class="tablinks"><b>COMPANY</b></a></li>
-				  <li><a id="services" class="tablinks"><b>SERVICES</b></a></li>
-				  <li><a id="business_profile" class="tablinks"><b>NEWS AND EVENTS</b></a></li>
-				  <li><a id="contact_us" class="tablinks"><b>CONTACT US</b></a></li>
-				  <li class="icon">
-				    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
-				  </li>
-				</ul>
-			</nav>
-			<!-- End of bottom Navigation Bar -->
-
-		</div>
 	</div>
 	<!-- End of Parallax Header -->
+		<!--Bottom Navigation Bar -->
+		<nav id="nav_bar" class="bottom-nav">
+			<ul class="topnav" id="myTopnav">
+				<li><a id="home" class="tablinks"><b>HOME</b></a></li>
+				<li><a id="aboutus" class="tablinks"><b>COMPANY</b></a></li>
+				<li><a id="services" class="tablinks"><b>SERVICES</b></a></li>
+				<li><a id="business_profile" class="tablinks"><b>NEWS AND EVENTS</b></a></li>
+				<li><a id="contact_us" class="tablinks"><b>CONTACT US</b></a></li>
+				<li class="icon">
+					<a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- End of bottom Navigation Bar -->
 
 	<div id="our-company" class="row company" >
 		<div id="heading-company" class="col-12 heading-company">
-			<h1>OUR COMPANY</h1>
+			<h1>WHO WE ARE</h1>
 		</div>
 
 		<div class="row">
@@ -90,7 +92,7 @@
       <div id="myMissionModal" class="modal">
         <!-- Mission Modal content -->
         <div class="modal-content">
-          <div class="modal-header" style="background-color: #233d91;">
+          <div class="modal-header">
             <span class="close" onclick="closeModal()">&times;</span>
             <h2>Company Mission</h2>
           </div>
@@ -109,7 +111,7 @@
       <div id="myVisionModal" class="modal">
         <!-- Vision Modal content -->
         <div class="modal-content">
-          <div class="modal-header" style="background-color: #233d91">
+          <div class="modal-header">
             <span class="close" onclick="closeModal()">&times;</span>
             <h2>Company Vision</h2>
           </div>
@@ -124,8 +126,25 @@
         </div>
       </div>
 	  </div>
-
   </div>
+
+	<div id="our-services" class="row services" >
+		<div id="heading-services" class="col-12 heading-services">
+			<h1>WHAT WE DO</h1>
+		</div>
+
+		<div class="row body-services">
+			<div class="col-4 image-services">
+				<img id="myBtn" src="images/mv.png" />
+			</div>
+			<div class="col-4 image-services">
+				<img id="myBtn" src="images/mv.png" />
+			</div>
+			<div class="col-4 image-services">
+				<img id="myBtn" src="images/mv.png" />
+			</div>
+		</div>
+	</div>
 
 	<script src="js/scroll.js"></script>
 	<script src="js/mvModal.js"></script>

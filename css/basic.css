@@ -101,6 +101,7 @@ h1
 .header-logo img {
   height: 10%;
   display: block;
+  cursor: pointer;
 }
 
 .header-caption {
@@ -136,15 +137,15 @@ h1
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: auto;
   text-align: center;
 }
 
 .bottom-fixed {
+  z-index: 0;
   position: fixed;
   top: 0;
   width: 100%;
-  height: auto;
+  height: 10%;
   text-align: center;
 }
 /* Style the list */
@@ -184,6 +185,7 @@ ul.topnav li a {
   transition: 0.3s;
   font-size: 14px;
   color: white;
+  cursor: pointer;
 }
 
 ul.topnav li a:hover {
@@ -195,159 +197,7 @@ ul.topnav li.icon {display: none;}
 
 /* End of Header */
 
-/* Our Company */
-.company {
-  height: 100%;
-  width: 100%;
-  background-color: white;
-}
 
-/* Heading Company */
-.heading-company {
-  background-color: #daa520;
-  color: #233d91;
-  width: 100%;
-}
-
-.heading-company-fixed{
-  background-color: #daa520;
-  width: 100%;
-  color: #233d91;
-  margin-top: 3.4%;
-}
-
-.heading-company h1{
-  text-align: left;
-  font-family: "Myriad";
-  font-size: 30px;
-}
-
-/* End of Heading Company */
-
-/* Body Company */
-.body-company {
-  padding: 3%;
-}
-
-.body-company h1{
-  text-align: left;
-  font-family: "Myriad";
-  font-size: 30px;
-}
-
-.body-company {
-  height: 100%;
-}
-
-/* End of Body Company */
-
-/* Mission and Vision */
-.mv {
-  width: 100%;
-  height: auto;
-}
-
-.mv h1{
-  text-align: center;
-  font-family: "Myriad";
-  font-size: 22px;
-}
-
-.mission {
-  height: 100%;
-  padding: 1%;
-}
-
-.vision {
-  height: 100%;
-  padding: 1%;
-}
-
-.mission img {
-  display: block;
-  margin: auto;
-  width: 30%;
-}
-
-.vision img {
-  display: block;
-  margin: auto;
-  width: 30%;
-}
-
-.vision img:hover {
-  width: 40%;
-}
-
-.mission img:hover {
-  width: 40%;
-}
-
-/* Mission and Vision Modal */
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-.modal-header {
-  border: 1px solid black;
-}
-/* Modal Content */
-.modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
-}
-
-/* Add Animation */
-@-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
-}
-
-@keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
-}
-
-/* The Close Button */
-.close {
-    color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* End of Mission and Vision */
-
-
-/* End of Company */
 
 /* Mobile Version */
 @media screen and (max-width:680px) {
@@ -359,11 +209,6 @@ ul.topnav li.icon {display: none;}
 
   .bottom-nav {
     top: 0;
-  }
-
-  .heading-company h1
-  {
-    text-align: center;
   }
 }
 
@@ -386,10 +231,5 @@ ul.topnav li.icon {display: none;}
 
   .bottom-nav {
     top: 0;
-  }
-
-  .heading-company h1
-  {
-    text-align: center;
   }
 }

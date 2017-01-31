@@ -199,10 +199,10 @@ ul.topnav li.icon {display: none;}
 .company {
   height: 100%;
   width: 100%;
-  border: 1px solid black;
   background-color: white;
 }
 
+/* Heading Company */
 .heading-company {
   background-color: #daa520;
   color: #233d91;
@@ -222,134 +222,146 @@ ul.topnav li.icon {display: none;}
   font-size: 30px;
 }
 
+/* End of Heading Company */
+
+/* Body Company */
 .body-company {
-  border: 1px solid black;
   padding: 3%;
+}
+
+.body-company h1{
+  text-align: left;
+  font-family: "Myriad";
+  font-size: 30px;
 }
 
 .body-company {
   height: 100%;
 }
-/* Slideshow Css here */
-.slideshow {
-  position: relative;
-}
-.row > .column {
-  padding: 0 8px;
+
+/* End of Body Company */
+
+/* Mission and Vision */
+.mv {
+  width: 100%;
+  height: auto;
 }
 
-.column {
-  float: left;
-  width: 25%;
+.mv h1{
+  text-align: center;
+  font-family: "Myriad";
+  font-size: 22px;
+}
+
+.mission {
+  height: 100%;
+  padding: 1%;
+}
+
+.vision {
+  height: 100%;
+  padding: 1%;
+}
+
+.mission img {
+  display: block;
+  margin: auto;
+  width: 30%;
+}
+
+.vision img {
+  display: block;
+  margin: auto;
+  width: 30%;
+}
+
+.vision img:hover {
+  width: 40%;
+}
+
+.mission img:hover {
+  width: 40%;
+}
+
+/* Mission and Vision Modal */
+.myBTN:hover{
+  background-color: black;
+  color: white;
 }
 
 /* The Modal (background) */
 .modal {
-  margin: 0 auto;
-  width: 100%;
-  height: 50%;
-
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
 .modal-content {
-  margin: auto;
-  position: relative;
-  background-color: #fefefe;
-  height: 100%;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
 }
 
-.image-container {
-  height: 100%;
-}
-.mySlides {
-  display: block;
-  width: 100%;
-  height: 100%;
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
 }
 
-.cursor {
-  cursor: pointer
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
 }
 
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 0%;
-  width: 10%;
-  height: 100%;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
-a.prev, a.next {
-  position: float;
-  font-weight: bold;
-  vertical-align:middle;
-  text-align:center;
-  font-size: 50px;
-  color: white;
-  padding-top: 25%;
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-/* Position the "next and previous button" to the right */
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
 }
 
-.prev {
-  left = 0;
-  border-radius: 3px 0 0 3px;
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
+/* End of Mission and Vision */
 
-.mySlides img {
-  margin-bottom: -4px;
-  max-width: none;
-  width: 100%;
-  display: block;
-}
 
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
-}
-
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-.mySlides img.hover-shadow {
-  transition: 0.3s
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-}
-
-/* End of slideshow Css here */
 /* End of Company */
 
 /* Mobile Version */

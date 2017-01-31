@@ -6,19 +6,20 @@
 <head>
 	<title>UpEast Website</title>
   <!-- Header Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/basic.css" />
+	<link rel="stylesheet" type="text/css" href="C:/Projects/Web/Ximex/css/basic.css" />
 
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/basic.js"></script>
 	<script src="js/slideshow.js"></script>
+  <script src="js/mvModal.js"></script>
 
 </head>
-<body onLoad="showSlides(slideIndex);;">
+<body onLoad="showSlides(slideIndex);">
 	<!-- Parallax Header -->
-	<div id="parallax-container" class="row parallax-container">
+	<div id="top-home" class="row parallax-container">
 	  <div class="parallax-container" style="background-image: url('images/building_parallax6.jpg')">
 			<header class="col-12 header-logo">
-				<a id="home"><img src="images/UPEAST/UPEAST LOGO vertical copy2.png" /></a>
+				<a><img src="images/UPEAST/UPEAST LOGO vertical copy2.png" /></a>
 				<div class="row header-logo">
 
 					<div class="row header-logo">
@@ -66,17 +67,48 @@
 				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
+        <br>
 			</div>
-
-			<!--
-			<div class="col-6 body-company">
-				<img src="images/UPEAST/UPEAST LOGO vertical copy.jpg" />
-			</div>
-			-->
-
 		</div>
-	</div>
 
+    <div class="row mv">
+      <div class="col-6 mission">
+        <h1>MISSION</h1>
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn" class="myBTN">Open Modal</button>
+  			<img id="myBtn" src="images/mv.png" />
+      </div>
+
+      <div class="col-6 vision">
+        <h1>VISION</h1>
+  			<img id="myBtn" src="images/mv.png" />
+      </div>
+
+
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Modal Header</h2>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the Modal Body</p>
+            <p>Some other text...</p>
+          </div>
+          <div class="modal-footer">
+            <h3>Modal Footer</h3>
+          </div>
+        </div>
+
+      </div>
+
+	  </div>
+
+  </div>
 </body>
 
 <script>
@@ -94,7 +126,7 @@
 
   $("#home").click(function() {
     $('html, body').animate({
-      scrollTop: $("#parallax-container").offset().top
+      scrollTop: $("#top-home").offset().top
     }, 2000);
   });
 
@@ -113,9 +145,6 @@
 	$(document).ready(function() {
 
 	  $(window).scroll(function () {
-	      //if you hard code, then use console
-	      //.log to determine when you want the
-	      //nav bar to stick.
 	      console.log($(window).scrollTop())
 	    if ($(window).scrollTop() >= $("#our-company").offset().top) {
 	      $('#nav_bar').addClass('bottom-fixed');
@@ -129,6 +158,7 @@
 	    }
 	  });
 	});
+
 </script>
 
 </html>

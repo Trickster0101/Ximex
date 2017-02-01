@@ -37,12 +37,63 @@ h1
 	font-size: 20px;
 }
 
+/* Viewports */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+	  width: 100%;
+}
+
+[class*="col-"]
+{
+    float: left;
+}
+
+@media only screen and (min-width: 600px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+/* End of Viewports */
+
+.column {
+  float: left;
+  width: 33%;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
 /* Services */
 
 .services {
   height: 100%;
   width: 100%;
-  background-color: white;
 }
 
 /* Heading Services */
@@ -74,46 +125,111 @@ h1
 
 /* Services Body */
 .body-services {
+  display: block;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
   height: 100%;
+}
+
+.list-services h2, h3 {
+  text-align: center;
+  padding: 7%;
+}
+
+.list-services ul {
+    list-style-type: none;
+    margin: 0 25%;
+    padding: 0;
+}
+.list-services li {
+    border-radius: 10px;
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #233d91;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.list-services li:hover {
+    background-color: #daa520;
+    color: black;
+    cursor: pointer;
 }
 
 .image-services {
+  border: 5px solid #021e7a;
+  top: 10px;
+  left: 5%;
+  margin: auto;
   position: relative;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 300px;
-  opacity: 1;
-  z-index: 10;
+  background-color: #fefefe;
+  padding: 0;
+  min-width: 30%;
+  max-width: 40%;
+  height:auto;
 }
 
-.image-services:hover .overlay{
-  opacity: 0.7;
+.mySlides {
+  background-color: transparent;
+  display:none;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
   cursor: pointer;
-}
-
-.overlay {
   position: absolute;
   top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  width: auto;
   height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #233d91;
+  padding: 16px;
+  padding-top: 40%;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
-.overlay-text {
-  font-family: "Myriad";
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #daa520;
+}
+
+.image-services img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #021e7a;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
 /* End of Services Body */
 
 /* End of Services */

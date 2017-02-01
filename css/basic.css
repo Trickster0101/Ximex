@@ -141,7 +141,7 @@ h1
 }
 
 .bottom-fixed {
-  z-index: 0;
+  z-index: 10;
   position: fixed;
   top: 0;
   width: 100%;

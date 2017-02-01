@@ -133,7 +133,7 @@ h1
   height: 100%;
 }
 
-.list-services h2, h3 {
+.list-services h2, .list-services h3 {
   text-align: center;
   padding: 7%;
 }
@@ -160,7 +160,6 @@ h1
 .image-services {
   border: 5px solid #021e7a;
   top: 10px;
-  left: 5%;
   margin: auto;
   position: relative;
   background-color: #fefefe;
@@ -191,7 +190,7 @@ h1
   padding-top: 40%;
   color: white;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;

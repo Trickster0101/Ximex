@@ -1,0 +1,125 @@
+*
+{
+  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+@font-face{
+    font-family: "Myriad";
+    src: url('Fonts/MyriadPro-Regular.otf'),
+    url('Fonts/MyriadPro-Regular.otf'); /* IE */
+}
+
+html
+{
+	height: 100%;
+  font-family: "Myriad";
+}
+
+body
+{
+	height: 100%;
+	margin:0;
+	background: #eff1f4;
+  font-family: "Myriad";
+}
+
+p
+{
+	color: Black;
+	font-size: 15px;
+}
+
+h1
+{
+	margin: 10px;
+	font-size: 20px;
+}
+
+/* Viewports */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+	  width: 100%;
+}
+
+[class*="col-"]
+{
+    float: left;
+}
+
+@media only screen and (min-width: 600px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+/* End of Viewports */
+
+/* News and Events body */
+.news-events {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+/* Heading Services */
+.heading-news-events {
+  z-index: -100;
+  background-color: #daa520;
+  color: #233d91;
+  width: 100%;
+  height: auto;
+  border: 5px solid #021e7a;
+}
+
+.heading-news-events-fixed{
+  background-color: #daa520;
+  width: 100%;
+  color: #233d91;
+  margin-top: 3.4%;
+  margin-bottom: 3.4%;
+  height: auto;
+}
+
+.heading-news-events h1{
+  text-align: left;
+  font-family: "Myriad";
+  font-size: 30px;
+  padding-left: 2%;
+}
+
+.news-events-body {
+  width: 100%;
+  padding:5% 3%;
+  background-color: white;
+}
+
+.news-events-body h2{
+  text-align: left;
+}

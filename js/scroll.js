@@ -4,10 +4,11 @@ $("#home").click(function() {
   }, 2000);
 });
 
-$("#business_profile").click(function() {
+$("#aboutus").click(function() {
   $('html, body').animate({
     scrollTop: $("#our-company").offset().top
   }, 2000);
+
 });
 
 $("#services").click(function() {
@@ -16,12 +17,12 @@ $("#services").click(function() {
   }, 2000);
 });
 
-$("#aboutus").click(function() {
+$("#news_event").click(function() {
   $('html, body').animate({
-    scrollTop: $("#our-company").offset().top
+    scrollTop: $("#news-events").offset().top
   }, 2000);
-
 });
+
 
 $("#contact_us").click(function() {
   $('html, body').animate({
@@ -37,23 +38,23 @@ $(window).scroll(function () {
       $(window).scrollTop() < $("#our-services").offset().top) {
     $('#nav_bar').addClass('bottom-fixed');
     $('#heading-company').addClass('heading-company-fixed');
-    $('#heading-services').addClass('heading-services-fixed');
 
     $("#aboutus").css("background-color", "#021e7a");
     $("#home").css("background-color", "#233d91");
     $("#services").css("background-color", "#233d91");
-    $("#business_profile").css("background-color", "#233d91");
+    $("#news_event").css("background-color", "#233d91");
     $("#contact_us").css("background-color", "#233d91");
   }
 
   //Our Services
   if ($(window).scrollTop() >= $("#our-services").offset().top) {
+    $('#nav_bar').addClass('bottom-fixed');
     $('#heading-services').addClass('heading-services-fixed');
 
     $("#aboutus").css("background-color", "#233d91");
     $("#home").css("background-color", "#233d91");
     $("#services").css("background-color", "#021e7a");
-    $("#business_profile").css("background-color", "#233d91");
+    $("#news_event").css("background-color", "#233d91");
     $("#contact_us").css("background-color", "#233d91");
   }
 
@@ -61,6 +62,24 @@ $(window).scroll(function () {
   if ($(window).scrollTop() < $("#our-services").offset().top &&
       $(window).scrollTop() > $("#our-company").offset().top) {
     $('#heading-services').removeClass('heading-services-fixed');
+  }
+
+  //News and Events
+  if ($(window).scrollTop() >= $("#news-events").offset().top) {
+    $('#nav_bar').addClass('bottom-fixed');
+    $('#heading-news-events').addClass('heading-news-events-fixed');
+
+    $("#aboutus").css("background-color", "#233d91");
+    $("#home").css("background-color", "#233d91");
+    $("#services").css("background-color", "#233d91");
+    $("#news_event").css("background-color", "#021e7a");
+    $("#contact_us").css("background-color", "#233d91");
+  }
+
+  //Scroll on Top of Services
+  if ($(window).scrollTop() < $("#news-events").offset().top &&
+      $(window).scrollTop() > $("#our-services").offset().top) {
+    $('#heading-news-events').removeClass('heading-news-events-fixed');
   }
 
   //Home
@@ -72,7 +91,7 @@ $(window).scroll(function () {
     $("#aboutus").css("background-color", "#233d91");
     $("#home").css("background-color", "#021e7a");
     $("#services").css("background-color", "#233d91");
-    $("#business_profile").css("background-color", "#233d91");
+    $("#news_event").css("background-color", "#233d91");
     $("#contact_us").css("background-color", "#233d91");
   }
 });

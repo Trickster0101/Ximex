@@ -81,15 +81,17 @@ h1
 }
 /* End of Viewports */
 
-/* News and Events body */
-.news-events {
+/* Contacts */
+.contacts {
   height: 100%;
   width: 100%;
+  border: 1px solid black;
   background-color: white;
+  clear:both;
 }
 
-/* Heading Services */
-.heading-news-events {
+/* Heading Contacts */
+.heading-contacts {
   z-index: -100;
   background-color: #daa520;
   color: #233d91;
@@ -98,7 +100,7 @@ h1
   border: 5px solid #021e7a;
 }
 
-.heading-news-events-fixed{
+.heading-contacts-fixed{
   background-color: #daa520;
   width: 100%;
   color: #233d91;
@@ -107,24 +109,9 @@ h1
   height: auto;
 }
 
-.heading-news-events h1{
+.heading-contacts h1{
   text-align: left;
   font-family: "Myriad";
   font-size: 30px;
   padding-left: 2%;
-}
-
-.news-events-body {
-  width: 100%;
-  clear:both;
-  padding:5% 5%;
-  background-color: white;
-}
-
-.news-events-body h2{
-  text-align: left;
-}
-
-.articles {
-  margin: 5% 0;
 }

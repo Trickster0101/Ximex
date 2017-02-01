@@ -26,7 +26,7 @@ $("#news_event").click(function() {
 
 $("#contact_us").click(function() {
   $('html, body').animate({
-    scrollTop: $("#our-company").offset().top
+    scrollTop: $("#contacts").offset().top
   }, 2000);
 });
 
@@ -80,6 +80,24 @@ $(window).scroll(function () {
   if ($(window).scrollTop() < $("#news-events").offset().top &&
       $(window).scrollTop() > $("#our-services").offset().top) {
     $('#heading-news-events').removeClass('heading-news-events-fixed');
+  }
+
+  //Contact Us
+  if ($(window).scrollTop() >= $("#contacts").offset().top) {
+    $('#nav_bar').addClass('bottom-fixed');
+    $('#heading-contacts').addClass('heading-contacts-fixed');
+
+    $("#aboutus").css("background-color", "#233d91");
+    $("#home").css("background-color", "#233d91");
+    $("#services").css("background-color", "#233d91");
+    $("#news_event").css("background-color", "#233d91");
+    $("#contact_us").css("background-color", "#021e7a");
+  }
+
+  //Scroll on News and Events
+  if ($(window).scrollTop() < $("#contacts").offset().top &&
+      $(window).scrollTop() > $("#news-events").offset().top) {
+    $('#heading-contacts').removeClass('heading-contacts-fixed');
   }
 
   //Home

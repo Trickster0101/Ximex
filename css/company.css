@@ -72,9 +72,6 @@ h1
 /* End of Heading Company */
 
 /* Body Company */
-.body-company {
-  padding: 3%;
-}
 
 .body-company h1{
   text-align: center;
@@ -83,7 +80,9 @@ h1
 }
 
 .body-company {
+  padding: 3%;
   height: 100%;
+  clear:both;
 }
 
 /* End of Body Company */
@@ -92,6 +91,7 @@ h1
 .mv {
   width: 100%;
   height: auto;
+  clear:both;
 }
 
 .mv h1{

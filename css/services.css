@@ -92,6 +92,7 @@ h1
 /* Services */
 
 .services {
+  background-color: white;
   height: 100%;
   width: 100%;
 }
@@ -125,10 +126,9 @@ h1
 
 /* Services Body */
 .body-services {
+  padding: 5%;
   display: block;
   z-index: 1;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   clear:both;
@@ -160,14 +160,11 @@ h1
 
 .image-services {
   border: 5px solid #021e7a;
-  top: 10px;
-  margin: auto;
-  position: relative;
+  margin: 0 5%;
   background-color: #fefefe;
   padding: 0;
-  min-width: 30%;
+  min-width: 40%;
   max-width: 40%;
-  height:auto;
 }
 
 .mySlides {
@@ -228,6 +225,24 @@ h1
 .active,
 .demo:hover {
   opacity: 1;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 /* End of Services Body */

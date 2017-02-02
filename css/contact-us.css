@@ -33,7 +33,6 @@ p
 
 h1
 {
-	margin: 10px;
 	font-size: 20px;
 }
 
@@ -85,7 +84,6 @@ h1
 .contacts {
   height: 100%;
   width: 100%;
-  border: 1px solid black;
   background-color: white;
   clear:both;
 }
@@ -96,17 +94,14 @@ h1
   background-color: #daa520;
   color: #233d91;
   width: 100%;
-  height: auto;
   border: 5px solid #021e7a;
 }
 
-.heading-contacts-fixed{
+.heading-contacts-fixed {
   background-color: #daa520;
-  width: 100%;
   color: #233d91;
+  width: 100%;
   margin-top: 3.4%;
-  margin-bottom: 3.4%;
-  height: auto;
 }
 
 .heading-contacts h1{
@@ -114,4 +109,26 @@ h1
   font-family: "Myriad";
   font-size: 30px;
   padding-left: 2%;
+}
+
+.body-contact h2{
+  background-color: white;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Myriad";
+}
+
+.body-contact {
+  background-color: white;
+  border: 1px solid black;
+  padding: 3%;
+  height: 100%;
+  clear:both;
+}
+
+.divisions {
+  display: inline-block;
+  background-color: white;
+  border: 1px solid black;
+  clear:both;
 }

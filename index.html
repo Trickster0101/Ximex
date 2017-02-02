@@ -14,11 +14,11 @@
 	<link rel="stylesheet" type="text/css" href="css/services.css" />
 	<!-- News and Events Style CSS -->
 	<link rel="stylesheet" type="text/css" href="css/newsandevents.css" />
-	<!-- News and Events Style CSS -->
+	<!-- Contact Us Style CSS -->
 	<link rel="stylesheet" type="text/css" href="css/contact-us.css" />
 
 	<script src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/slideshow.js"></script>
+
 
 	<!--
 	<script src="js/slideshow.js"></script>
@@ -39,13 +39,11 @@
 						</div>
 					</div>
 				</div>
-
 			</header>
-
 		</div>
-
 	</div>
 	<!-- End of Parallax Header -->
+
 		<!--Bottom Navigation Bar -->
 		<nav id="nav_bar" class="bottom-nav">
 			<ul class="topnav" id="myTopnav">
@@ -67,8 +65,8 @@
 		</div>
 
 		<div class="row">
-			<div class="col-12 body-company">
-				<h1>UPEAST Security Agency, Inc.</h1>
+			<div  class="col-12 body-company">
+				<h1 id="headerDiv">UPEAST Security Agency, Inc.</h1>
 				<p style="text-align: left">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -96,7 +94,7 @@
       <div id="myMissionModal" class="modal">
         <!-- Mission Modal content -->
         <div class="modal-content">
-          <div class="modal-header">
+          <div id="modal-header" class="modal-header">
             <span class="close" onclick="closeModal()">&times;</span>
             <h2>Company Mission</h2>
           </div>
@@ -140,23 +138,24 @@
 
 		<div id="slideshow" class="row body-services">
 			<div class="col-6 list-services">
-				<h2>WE OFFER THE FOLLOWING SERVICES:</h2>
+				<h2 id="servicesDiv">WE OFFER THE FOLLOWING SERVICES:</h2>
 				<ul>
 			    <li><h3>SECURITY</h3></li>
 			    <li><h3>SECURITY</h3></li>
 			    <li><h3>SECURITY</h3></li>
 			  </ul>
 			</div>
+
 			<div class="col-6 image-services">
-				<div class="mySlides">
+				<div class="mySlides fade">
 		      <img src="images/secu_1.jpg" style="width:100%">
 		    </div>
 
-				<div class="mySlides">
+				<div class="mySlides fade">
 		      <img src="images/secu_2.jpg" style="width:100%">
 		    </div>
 
-				<div class="mySlides">
+				<div class="mySlides fade">
 		      <img src="images/secu_3.jpg" style="width:100%">
 		    </div>
 
@@ -187,11 +186,9 @@
 		<div id="heading-news-events" class="col-12 heading-news-events">
 			<h1>LATEST UPDATES</h1>
 		</div>
-		<br>
-		<br>
 		<div class="row news-events-body">
 			<div class="col-12 articles">
-				<h2>Sample News and Events</h2>
+				<h2 id="neDiv">Sample News and Events</h2>
 				<br>
 				<br>
 				<p>
@@ -244,15 +241,34 @@
 	</div>
 	<!-- End of News and Events -->
 
-	<!-- News and Events -->
+	<!-- Contact Us -->
 	<div id="contacts" class="row contacts" >
 		<div id="heading-contacts" class="col-12 heading-contacts">
 			<h1>GET IN TOUCH WITH US</h1>
 		</div>
+
+		<div class="row">
+			<div  class="col-12 body-contact">
+				<h2>UPEAST Security Agency, Inc.</h2>
+			</div>
+		</div>
+
+		<div class="row ">
+			<div  class="col-6 divisions">
+				<h2>UPEAST Security Agency, Inc.</h2>
+			</div>
+
+			<div  class="col-6 divisions">
+				<h2>UPEAST Security Agency, Inc.</h2>
+			</div>
+		</div>
 	</div>
+	<!-- End of Contact Us -->
 
 	<script src="js/scroll.js"></script>
+	<!--	<script src="js/animation.js"></script> -->
 	<script src="js/mvModal.js"></script>
+	<script src="js/slideshow.js"></script>
 	<script src="js/basic.js"></script>
 
 

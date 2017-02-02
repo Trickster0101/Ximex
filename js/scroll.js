@@ -8,7 +8,6 @@ $("#aboutus").click(function() {
   $('html, body').animate({
     scrollTop: $("#our-company").offset().top
   }, 2000);
-
 });
 
 $("#services").click(function() {
@@ -31,11 +30,11 @@ $("#contact_us").click(function() {
 });
 
 $(window).scroll(function () {
-    console.log($(window).scrollTop())
-
   //Our Company
   if ($(window).scrollTop() >= $("#our-company").offset().top &&
-      $(window).scrollTop() < $("#our-services").offset().top) {
+      $(window).scrollTop() < $("#our-services").offset().top)
+  {
+
     $('#nav_bar').addClass('bottom-fixed');
     $('#heading-company').addClass('heading-company-fixed');
 
@@ -76,14 +75,15 @@ $(window).scroll(function () {
     $("#contact_us").css("background-color", "#233d91");
   }
 
-  //Scroll on Top of Services
+  //Scroll on Top of News and Events
   if ($(window).scrollTop() < $("#news-events").offset().top &&
       $(window).scrollTop() > $("#our-services").offset().top) {
     $('#heading-news-events').removeClass('heading-news-events-fixed');
   }
 
-  //Contact Us
+  //News and Events
   if ($(window).scrollTop() >= $("#contacts").offset().top) {
+    console.log($(window).scrollTop())
     $('#nav_bar').addClass('bottom-fixed');
     $('#heading-contacts').addClass('heading-contacts-fixed');
 
@@ -94,11 +94,13 @@ $(window).scroll(function () {
     $("#contact_us").css("background-color", "#021e7a");
   }
 
-  //Scroll on News and Events
+  //Scroll on Top of News and Events
   if ($(window).scrollTop() < $("#contacts").offset().top &&
       $(window).scrollTop() > $("#news-events").offset().top) {
     $('#heading-contacts').removeClass('heading-contacts-fixed');
   }
+
+
 
   //Home
   if ($(window).scrollTop() < $("#our-company").offset().top &&
@@ -111,5 +113,7 @@ $(window).scroll(function () {
     $("#services").css("background-color", "#233d91");
     $("#news_event").css("background-color", "#233d91");
     $("#contact_us").css("background-color", "#233d91");
+
+
   }
 });

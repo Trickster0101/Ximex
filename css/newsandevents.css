@@ -48,7 +48,7 @@ h1
 
 [class*="col-"]
 {
-    float: left;
+  float: left;
 }
 
 @media only screen and (min-width: 600px) {
@@ -103,8 +103,6 @@ h1
   width: 100%;
   color: #233d91;
   margin-top: 3.4%;
-  margin-bottom: 3.4%;
-  height: auto;
 }
 
 .heading-news-events h1{
@@ -117,7 +115,7 @@ h1
 .news-events-body {
   width: 100%;
   clear:both;
-  padding:5% 5%;
+  padding: 0 3%;
   background-color: white;
 }
 
@@ -126,5 +124,5 @@ h1
 }
 
 .articles {
-  margin: 5% 0;
+  margin: 2% 0;
 }

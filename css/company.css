@@ -50,7 +50,6 @@ h1
   background-color: #daa520;
   color: #233d91;
   width: 100%;
-  height: auto;
   border: 5px solid #021e7a;
 }
 
@@ -74,9 +73,9 @@ h1
 /* Body Company */
 
 .body-company h1{
+  font-size: 30px;
   text-align: center;
   font-family: "Myriad";
-  font-size: 30px;
 }
 
 .body-company {

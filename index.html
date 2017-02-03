@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-	<title>UpEast Website</title>
+	<title>UpEast Security Agency</title>
 	<link rel="icon"  type="image/png" href="images/UPEAST/UPEAST LOGO vertical copy2.png" />
   <!-- Header Style CSS -->
 	<link rel="stylesheet" type="text/css" href="css/basic.css" />
@@ -16,6 +16,8 @@
 	<link rel="stylesheet" type="text/css" href="css/newsandevents.css" />
 	<!-- Contact Us Style CSS -->
 	<link rel="stylesheet" type="text/css" href="css/contact-us.css" />
+	<!-- Footer Style CSS -->
+	<link rel="stylesheet" type="text/css" href="css/footer.css" />
 
 	<script src="js/jquery-3.1.1.min.js"></script>
 
@@ -29,7 +31,7 @@
 	<div id="top-home" class="row parallax-container">
 	  <div class="parallax-container" style="background-image: url('images/building_parallax6.jpg')">
 			<header class="col-12 header-logo">
-				<a><img src="images/UPEAST/UPEAST LOGO vertical copy2.png" /></a>
+				<a href="http://www.upeast.com/"><img src="images/UPEAST/UPEAST LOGO vertical copy2.png" /></a>
 				<div class="row header-logo">
 
 					<div class="row header-logo">
@@ -68,6 +70,10 @@
 			<div  class="col-12 body-company">
 				<h1 id="headerDiv">UPEAST Security Agency, Inc.</h1>
 				<p style="text-align: left">
+					<?php
+						include 'php/database.php';
+						echo "COMMON";
+					?>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -158,10 +164,10 @@
 				<div class="mySlides fade">
 		      <img src="images/secu_3.jpg" style="width:100%">
 		    </div>
-
+				<!--
 				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 		    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+				-->
 				<div class="caption-container">
 		      <p id="caption"></p>
 		    </div>
@@ -250,27 +256,100 @@
 		<div class="row">
 			<div  class="col-12 body-contact">
 				<h2>UPEAST Security Agency, Inc.</h2>
+				<br>
+				<p>Send us your concerns so we can provide you with excellent solutions.</p>
 			</div>
 		</div>
 
-		<div class="row ">
-			<div  class="col-6 divisions">
-				<h2>UPEAST Security Agency, Inc.</h2>
+		<div class="row contact-body-container">
+			<div  class="col-12 contact-container">
+					<div class="container-head">
+						<h2 onclick="openContainer1()">SEND US AN INQUIRY</h2>
+					</div>
+					<div class="container-bodies">
+						<h2 onclick="openContainer2()">LOCATE US</h2>
+					</div>
 			</div>
+		</div>
 
-			<div  class="col-6 divisions">
-				<h2>UPEAST Security Agency, Inc.</h2>
+		<!-- The 1st Container Modal -->
+		<div id="first-container-modal" class="modal-container">
+			<div class="modal-content-container">
+				<div id="modal-header" class="modal-header-container">
+					<span class="container-close" onclick="closeContainers()">&times;</span>
+					<h2>Contact Form</h2>
+				</div>
+				<div class="modal-body-container">
+					<form action="">
+						<label>
+							<b>Name</b>
+							<input type="text" name="firstname" required>
+						</label>
+						<label>
+							<b>E-mail</b>
+							<input type="email" name="email" required>
+						</label>
+						<label>
+							<b>Message</b>
+							<br>
+							<textarea rows="10" cols="40" required></textarea>
+						</label>
+						<input type="submit">
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- The 2nd Container Modal -->
+		<div id="second-container-modal" class="modal-container">
+			<div class="modal-content-container">
+				<div id="modal-header" class="modal-header-container">
+					<span class="container-close" onclick="closeContainers()">&times;</span>
+					<h2>LOCATION AND CONTACTS</h2>
+				</div>
+				<div class="modal-body-container">
+					<h2>LOCATION: </h2>
+					<br>
+					<p>Lorem ipsum dolor sit amet</p>
+					<br>
+					<h2>CONTACTS:</h2>
+					<br>
+					<p>123-456-789</p>
+				</div>
 			</div>
 		</div>
 	</div>
 	<!-- End of Contact Us -->
+
+	<!-- Footer -->
+	<div class="row footer">
+		<div class="col-4 footer-body">
+			<b>Opening Hours</b>
+			<br>
+			<br>
+			<b>Monday - Friday: 6:00 a.m - 6:00 p.m</b>
+		</div>
+
+		<div class="col-4 footer-body-middle">
+			<b>UPEAST SECURITY AGENCY, INC. © Copyright 2016</b>
+		</div>
+
+		<div class="col-4 footer-body">
+			<b>PARTNER COMPANIES</b>
+			<br>
+			<a href="http://www.xde247.com.ph/"><img src="images/XIMEX LOGO-WHITE ON ORANGE-lowres.jpg"></a>
+			<a><img src="images/XANTARA DEV - lowres.jpg"></a>
+			<a href="http://budgetbotika.com/"><img src="images/budgetbotika_logo 400x400px copy.jpg"></a>
+		</div>
+	</div>
+	<!-- End of Footer -->
 
 	<script src="js/scroll.js"></script>
 	<!--	<script src="js/animation.js"></script> -->
 	<script src="js/mvModal.js"></script>
 	<script src="js/slideshow.js"></script>
 	<script src="js/basic.js"></script>
-
+	<script src="js/contactusModal.js"></script>
 
 </body>
 

@@ -118,17 +118,149 @@ h1
   font-family: "Myriad";
 }
 
+.body-contact p{
+  background-color: white;
+  font-size: 15px;
+  text-align: center;
+  font-family: "Myriad";
+}
+
 .body-contact {
   background-color: white;
-  border: 1px solid black;
   padding: 3%;
   height: 100%;
   clear:both;
 }
 
-.divisions {
+.contact-body-container {
+  height: 60%;
+  text-align: center;
+}
+
+.container-head {
+  padding: 6.25%;
+  background-color: #daa520;
+  height: 100%;
+}
+
+.container-head h2:hover {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.container-bodies {
+  padding: 6.25%;
+  background-color: #233d91;
+  height: 30%;
+}
+
+.container-bodies h2:hover {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal-container {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-header-container {
+  background-color: #233d91;
+  color: white;
+  padding: 2%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+/* Modal Content */
+.modal-content-container {
+    border-radius: 20px;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatewidth;
+    -webkit-animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-name: animatewidth;
+    animation-duration: 0.5s
+}
+
+.modal-body-container {
+  width: 100%;
+  padding: 2%;
+}
+/* Add Animation */
+@-webkit-keyframes animatewidth {
+    from { width: 0; opacity:0}
+    to {width: 80%; opacity:1}
+}
+
+@keyframes animatewidth {
+  from {width: 0%; opacity:0}
+  to {width: 80%; opacity:1}
+}
+
+/* The Close Button */
+.container-close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.container-close:hover,
+.container-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type=text], input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
   display: inline-block;
-  background-color: white;
-  border: 1px solid black;
-  clear:both;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus{
+    border: 3px solid #233d91;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 4px;
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #233d91;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #daa520;
 }

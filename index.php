@@ -91,8 +91,6 @@
   			<img id="myBtn" class="mv-hover" src="images/mv.png" onclick="openVisionModal()"/>
       </div>
 
-
-
       <!-- The Mission Modal -->
       <div id="myMissionModal" class="modal">
         <!-- Mission Modal content -->
@@ -321,8 +319,8 @@
 	<!-- Footer -->
 	<div class="row footer">
 		<div class="col-4 footer-body">
-			<b>Opening Hours</b>
 			<br>
+			<b>Opening Hours</b>
 			<br>
 			<b>Monday - Friday: 6:00 a.m - 6:00 p.m</b>
 		</div>

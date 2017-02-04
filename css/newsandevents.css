@@ -83,7 +83,7 @@ h1
 
 /* News and Events body */
 .news-events {
-  height: 100%;
+  height: auto;
   width: 100%;
   background-color: white;
 }

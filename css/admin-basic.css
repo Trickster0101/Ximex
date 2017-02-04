@@ -153,7 +153,7 @@ h1
 .bottom-nav {
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 75%;
   text-align: center;
 }
 
@@ -161,7 +161,7 @@ h1
   z-index: 10;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 75%;
   height: 10%;
   text-align: center;
 }

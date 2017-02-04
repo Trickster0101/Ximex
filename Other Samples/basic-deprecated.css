@@ -6,9 +6,9 @@
 }
 
 @font-face{
-    font-family: "Myriad";
-    src: url('Fonts/MyriadPro-Regular.otf'),
-    url('Fonts/MyriadPro-Regular.otf'); /* IE */
+  font-family: "Myriad";
+  src: url('Fonts/MyriadPro-Regular.otf'),
+  url('Fonts/MyriadPro-Regular.otf'); /* IE */
 }
 
 html

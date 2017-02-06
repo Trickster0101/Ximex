@@ -71,7 +71,7 @@
 		<div class="row">
 			<div  class="col-12 body-company">
 				<h1 id="headerDiv">UPEAST Security Agency, Inc.</h1>
-				<p style="text-align: center">
+				<p style="<?php include 'php/style-css.php' ?>">
 					<?php
 						include 'php/fetchData.php';
 					?>

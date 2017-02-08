@@ -14,5 +14,6 @@
 	}
 	else
 	{
+		//echo "Connection Successful";
 	}
 ?>

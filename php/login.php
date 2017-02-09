@@ -14,7 +14,7 @@
       && $row["user_admin"] == 1 && $row["is_active"] == 1)
 			{
         echo "USER FOUND";
-        header("location: admin-index.html");
+        header("location: admin/admin-index.html");
       }
       else
       {

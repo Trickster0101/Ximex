@@ -85,8 +85,8 @@ h1
 /* End of Viewports */
 
 .body-holder {
-  margin-left: 25%;
   height: 100%;
+  width: 100%;
 }
 /* Header */
 
@@ -184,7 +184,7 @@ h1
 .bottom-nav {
   position: absolute;
   bottom: 0;
-  width: 75%;
+  width: 100%;
   text-align: center;
 }
 
@@ -192,7 +192,7 @@ h1
   z-index: 10;
   position: fixed;
   top: 0;
-  width: 75%;
+  width: 100%;
   height: 10%;
   text-align: center;
 }

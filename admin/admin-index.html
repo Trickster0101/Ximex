@@ -7,19 +7,19 @@
 	<title>UpEast Security Agency</title>
 	<link rel="icon"  type="image/png" href="images/UPEAST/UPEAST LOGO vertical copy2.png" />
   <!-- Sidebar Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/admin/admin-sidebar.css" />
+	<link rel="stylesheet" type="text/css" href="css/admin-sidebar.css" />
   <!-- Header Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/admin/admin-basic.css" />
+	<link rel="stylesheet" type="text/css" href="css/admin-basic.css" />
 	<!-- Company Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/company.css" />
+	<link rel="stylesheet" type="text/css" href="../css/company.css" />
 	<!-- Services Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/services.css" />
+	<link rel="stylesheet" type="text/css" href="../css/services.css" />
 	<!-- News and Events Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/newsandevents.css" />
+	<link rel="stylesheet" type="text/css" href="../css/newsandevents.css" />
 	<!-- Contact Us Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/contact-us.css" />
+	<link rel="stylesheet" type="text/css" href="../css/contact-us.css" />
 	<!-- Footer Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/footer.css" />
+	<link rel="stylesheet" type="text/css" href="../css/footer.css" />
 
 	<script src="js/jquery-3.1.1.min.js"></script>
 
@@ -30,20 +30,20 @@
 </head>
 <body onLoad="showSlides(slideIndex);">
 
-  <div id="mySidenav" class="sidenav">
-    <ul class="nav">
-      <li>Header</li>
-      <li>Body</li>
-      <li>Footer</li>
-    </ul>
-  </div>
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="#">About</a>
+	  <a href="#">Services</a>
+	  <a href="#">Clients</a>
+	  <a href="#">Contact</a>
+	</div>
 
   <div class="body-holder">
 		<!-- Parallax Header -->
 		<div id="top-home" class="row parallax-container">
-		  <div class="parallax-container" style="background-image: url('images/building_parallax6.jpg')">
+		  <div class="parallax-container" style="background-image: url('../images/building_parallax6.jpg')">
 				<header class="col-12 col-m-12 header-logo">
-					<a href="http://www.upeast.com/"><img src="images/UPEAST/UPEAST LOGO vertical copy2.png" /></a>
+					<a href="http://www.upeast.com/"><img src="../images/UPEAST/UPEAST LOGO vertical copy2.png" /></a>
 					<a href="login-index.php" class="LogInButton"><span><b>Log In</b></span></a>
 
 					<div class="row header-logo">
@@ -95,12 +95,12 @@
 	    <div class="row mv">
 	      <div class="col-6 col-m-6 mission">
 	        <h1>MISSION</h1>
-	  			<img id="myBtn" src="images/mv.png" onclick="openMissionModal()"/>
+	  			<img id="myBtn" src="../images/mv.png" onclick="openMissionModal()"/>
 	      </div>
 
 	      <div class="col-6 col-m-6 vision">
 	        <h1>VISION</h1>
-	  			<img id="myBtn" class="mv-hover" src="images/mv.png" onclick="openVisionModal()"/>
+	  			<img id="myBtn" class="mv-hover" src="../images/mv.png" onclick="openVisionModal()"/>
 	      </div>
 
 
@@ -163,15 +163,15 @@
 
 				<div class="col-6 col-m-6 list-services">
 					<div class="mySlides fade">
-			      <img src="images/secu_1.jpg" style="width:100%">
+			      <img src="../images/secu_1.jpg" style="width:100%">
 			    </div>
 
 					<div class="mySlides fade">
-			      <img src="images/secu_2.jpg" style="width:100%">
+			      <img src="../images/secu_2.jpg" style="width:100%">
 			    </div>
 
 					<div class="mySlides fade">
-			      <img src="images/secu_3.jpg" style="width:100%">
+			      <img src="../images/secu_3.jpg" style="width:100%">
 			    </div>
 
 					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -182,13 +182,13 @@
 			    </div>
 
 					<div class="column">
-			      <img class="demo cursor" src="images/secu_1.jpg" style="width:100%" onclick="currentSlide(1)">
+			      <img class="demo cursor" src="../images/secu_1.jpg" style="width:100%" onclick="currentSlide(1)">
 			    </div>
 			    <div class="column">
-			      <img class="demo cursor" src="images/secu_2.jpg" style="width:100%" onclick="currentSlide(2)">
+			      <img class="demo cursor" src="../images/secu_2.jpg" style="width:100%" onclick="currentSlide(2)">
 			    </div>
 			    <div class="column">
-			      <img class="demo cursor" src="images/secu_3.jpg" style="width:100%" onclick="currentSlide(3)">
+			      <img class="demo cursor" src="../images/secu_3.jpg" style="width:100%" onclick="currentSlide(3)">
 			    </div>
 				</div>
 			</div>
@@ -346,27 +346,27 @@
 			<div class="col-4 col-m-4 footer-body">
 				<div class="row">
 					<div class="col-12 col-m-12 mother">
-						<a href="http://www.xde247.com.ph/"><img src="images/XIMEX LOGO-WHITE ON ORANGE-lowres.jpg"></a>
+						<a href="http://www.xde247.com.ph/"><img src="../images/XIMEX LOGO-WHITE ON ORANGE-lowres.jpg"></a>
 					</div>
 				</div>
 				<div class="row child">
 					<div class="col-6 col-m-6">
-						<a href="http://www.xde247.com.ph/"><img src="images/XDE LOGISTICS - orange  transparent SM.png"></a>
+						<a href="http://www.xde247.com.ph/"><img src="../images/XDE LOGISTICS - orange  transparent SM.png"></a>
 					</div>
 					<div class="col-6 col-m-6">
-						<a href="http://budgetbotika.com/"><img src="images/budgetbotika.png"></a>
+						<a href="http://budgetbotika.com/"><img src="../images/budgetbotika.png"></a>
 					</div>
 				</div>
 			</div>
 		</footer>
 		<!-- End of Footer -->
 	</div>
-	<script src="js/scroll.js"></script>
+	<script src="../js/scroll.js"></script>
 	<!--	<script src="js/animation.js"></script> -->
-	<script src="js/mvModal.js"></script>
-	<script src="js/slideshow.js"></script>
-	<script src="js/basic.js"></script>
-	<script src="js/contactusModal.js"></script>
+	<script src="../js/mvModal.js"></script>
+	<script src="../js/slideshow.js"></script>
+	<script src="../js/basic.js"></script>
+	<script src="../js/contactusModal.js"></script>
 
 </body>
 

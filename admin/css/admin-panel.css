@@ -1,0 +1,138 @@
+*
+{
+  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+@font-face{
+  font-family: "Myriad";
+  src: url('Fonts/MyriadPro-Regular.otf'),
+  url('Fonts/MyriadPro-Regular.otf'); /* IE */
+}
+
+html
+{
+	height: 100%;
+  font-family: "Myriad";
+}
+
+body
+{
+	height: 100%;
+	background: #eff1f4;
+  font-family: "Myriad";
+}
+
+/* Viewports */
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  width: 100%;
+}
+
+[class*="col-"]
+{
+  float: left;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-m-1 {width: 8.33%;}
+  .col-m-2 {width: 16.66%;}
+  .col-m-3 {width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+/* End of Viewports */
+
+.body-holder {
+  height: 100%;
+  width: 80%;
+  margin-left: 20%;
+}
+
+.header {
+  text-align: right;
+  font-family: "Myriad";
+  color: #233d91;
+  font-size: 15px;
+  padding: 1.5%;
+  background-color: #daa520;
+  border: 5px solid #021e7a;
+}
+
+.header h1 {
+  font-variant: small-caps;
+}
+
+.sidenav {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1a1a1a;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+
+  background: -webkit-linear-gradient(#233d91, black); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#233d91, black); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#233d91, black); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#233d91, black); /* Standard syntax (must be last) */
+}
+
+.sidenav h2 {
+  text-align: center;
+  color: white;
+  padding: 5%;
+  margin-bottom: 5%;
+  font-variant: small-caps;
+}
+
+.borderTop {
+  border-top: 1px solid #8c8c8c;
+}
+
+.sidenav a {
+  border-bottom: 1px solid #8c8c8c;
+  padding: 5%;
+  text-decoration: none;
+  font-family: "Myriad";
+  font-size: 17px;
+  font-variant: small-caps;
+  color: white;
+  display: block;
+  transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+  background-color: #daa520;
+}

@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 	<title>UpEast Security Agency</title>
-	<link rel="icon"  type="image/png" href="images/UPEAST/UPEAST LOGO vertical copy2.png" />
+	<link rel="icon"  type="image/png" href="../images/UPEAST/UPEAST LOGO vertical copy2.png" />
   <!-- Sidebar Style CSS -->
 	<link rel="stylesheet" type="text/css" href="css/admin-panel.css" />
 
@@ -15,27 +15,31 @@
 
 <body>
   <div class="body-holder">
-    <!--Admin Panel Header -->
+
+    <nav id="mySidenav" class="sidenav">
+			<ul class="topnav">
+				<li><a href="#" class="borderTop">Dashboard</a></li>
+				<li><a href="admin-index.php">Edit Website</a></li>
+      	<li><a href="#">Manage Employee Accounts</a></li>
+	      <li><a href="#">Pending Posts</a></li>
+	      <li><a href="#">Uploads</a></li>
+	      <li><a href="#">News and Events</a></li>
+				<li><a href="#">Archives</a></li>
+				<!--
+				<li class="icon">
+					<a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+				</li>
+				-->
+			</ul>
+    </nav>
+
+		<!--Admin Panel Header -->
     <header class="row header">
       <div class="col-12 col-m-12">
         <h1>Hello, Admin!</h1>
       </div>
     </header>
     <!-- End of Admin Panel Header -->
-
-    <div id="mySidenav" class="sidenav">
-      <div class="row">
-        <div class="col-12 col-m-12">
-          <h2>Control Panel</h2>
-        </div>
-      </div>
-			<a href="admin-index.html" class="borderTop">Edit Website</a>
-      <a href="#">Manage Employee Accounts</a>
-      <a href="#">Pending Posts</a>
-      <a href="#">Uploads</a>
-      <a href="#">News and Events</a>
-			<a href="#">Archives</a>
-    </div>
   </div>
 </body>
 

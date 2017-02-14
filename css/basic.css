@@ -146,7 +146,7 @@ h1
   height: 100%;
 }
 
-.header-logo img {
+.header-logo-image {
   height: 20%;
   display: block;
   cursor: pointer;
@@ -157,6 +157,14 @@ h1
   width: 100%;
   height: 80%;
   padding: 15%;
+}
+
+.edit-button {
+  z-index: 10000000;
+  position: absolute;
+  width: 4%;
+  height: 5%;
+  cursor: pointer;
 }
 
 .header-caption h2{

@@ -84,7 +84,6 @@ body
   font-size: 15px;
   padding: 1.5%;
   background-color: #daa520;
-  border: 5px solid #021e7a;
 }
 
 .header h1 {
@@ -101,7 +100,6 @@ body
   background-color: #1a1a1a;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 30px;
 
   background: -webkit-linear-gradient(#233d91, black); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(#233d91, black); /* For Opera 11.1 to 12.0 */
@@ -123,7 +121,7 @@ body
 
 .sidenav a {
   border-bottom: 1px solid #8c8c8c;
-  padding: 5%;
+  padding: 8%;
   text-decoration: none;
   font-family: "Myriad";
   font-size: 17px;
@@ -135,4 +133,69 @@ body
 
 .sidenav a:hover, .offcanvas a:focus{
   background-color: #daa520;
+}
+
+/* Mobile Version */
+@media screen and (max-width:680px) {
+  .sidenav {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .sidenav a {
+    font-size: 14px;
+    padding: 2%;
+    margin-bottom: 0px;
+  }
+  .body-holder {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon
+  {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px)
+{
+  .sidenav {
+    position: relative;
+    width: 100%;
+    height: 10%;
+  }
+
+  .sidenav a {
+    font-size: 14px;
+    padding: 2%;
+  }
+
+  .body-holder {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon
+  {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li
+  {
+    float: none;
+    display: inline-block;
+  }
+  ul.topnav.responsive li a
+  {
+    display: inline-block;
+    text-align: left;
+  }
 }

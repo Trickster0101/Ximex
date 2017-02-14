@@ -4,7 +4,7 @@
     $username = $_POST['uname'];
     $password = $_POST['psw'];
 
-    $select = "SELECT * FROM employee_accounts";
+    $select = "SELECT * FROM employee_accounts where user_name = '$username'";
     $result = $conn->query($select);
     $row = mysqli_fetch_array($result);
 

@@ -2,7 +2,7 @@
 	$server = 'localhost';
 	$username = 'root';
 	$password = '';
-	$dbname = 'upeast';
+	$dbname = 'mydb';
 
 	$conn = new mysqli($server, $username, $password, $dbname);
 
@@ -14,6 +14,6 @@
 	}
 	else
 	{
-		echo "Connection Successful";
+		//echo "Connection Successful";
 	}
 ?>

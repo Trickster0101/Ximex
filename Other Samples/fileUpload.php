@@ -8,7 +8,7 @@
     <input type="submit" value="Upload Image" name="submit">
 </form>
 <?php
-  include 'php/database.php';
+  include '../php/database.php';
   include 'upload.php';
 ?>
 </body>

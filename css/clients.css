@@ -80,7 +80,7 @@ h1
   padding: 2%;
   position: relative;
   height: 100%;
-  
+
 }
 
 .image {
@@ -122,7 +122,14 @@ h1
 
 @media only screen and (min-width: 600px) {
   /* For tablets: */
+  .clients-body-row {
+    display: table;
+  }
 
+  .clients-body {
+    vertical-align: center;
+    display: table-cell;
+  }
 }
 @media only screen and (min-width: 768px) {
   /* For desktop: */
@@ -131,6 +138,7 @@ h1
   }
 
   .clients-body {
+    vertical-align: center;
     display: table-cell;
   }
 }

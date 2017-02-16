@@ -12,20 +12,20 @@
 	<title>UpEast Security Agency</title>
 	<link rel="icon"  type="image/png" href="images/UPEAST/UPEAST LOGO vertical copy2.png" />
   <!-- Sidebar Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/admin-website-panel.css" />
+	<link rel="stylesheet" type="text/css" href="css/admin-website-panel.css?version=51" />
   <!-- Header Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/admin-basic.css" />
-	<link rel='stylesheet' type='text/css' href='../php/db-styles.php' />
+	<link rel="stylesheet" type="text/css" href="css/admin-basic.css?version=51" />
+	<link rel='stylesheet' type='text/css' href='../php/db-styles.php?version=51' />
 	<!-- Company Style CSS -->
-	<link rel="stylesheet" type="text/css" href="../css/company.css" />
+	<link rel="stylesheet" type="text/css" href="../css/company.css?version=51" />
 	<!-- Services Style CSS -->
-	<link rel="stylesheet" type="text/css" href="../css/services.css" />
+	<link rel="stylesheet" type="text/css" href="../css/services.css?version=51" />
 	<!-- News and Events Style CSS -->
-	<link rel="stylesheet" type="text/css" href="../css/newsandevents.css" />
+	<link rel="stylesheet" type="text/css" href="../css/newsandevents.css?version=51" />
 	<!-- Contact Us Style CSS -->
-	<link rel="stylesheet" type="text/css" href="../css/contact-us.css" />
+	<link rel="stylesheet" type="text/css" href="../css/contact-us.css?version=51" />
 	<!-- Footer Style CSS -->
-	<link rel="stylesheet" type="text/css" href="../css/footer.css" />
+	<link rel="stylesheet" type="text/css" href="../css/footer.css?version=51" />
 	<script src="js/jquery-3.1.1.min.js"></script>
 
 
@@ -37,10 +37,11 @@
 
 	<div id="mySidenav" class="sidenav">
 	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	  <a href="#">About</a>
-	  <a href="#">Services</a>
-	  <a href="#">Clients</a>
-	  <a href="#">Contact</a>
+		<form action="upload.php" method="post" enctype="multipart/form-data">
+	    <p style="color: white">Select image to upload:</p>
+	    <input style="color: white" type="file" name="fileToUpload" id="fileToUpload">
+	    <input type="submit" value="Upload Image" name="submit">
+		</form>
 	</div>
 
   <div id="body-holder" class="body-holder">
@@ -48,7 +49,7 @@
 		<div id="top-home" class="row parallax-container">
 		  <div class="parallax-container" style="background-image: url('../images/building_parallax6.jpg')">
 				<header class="col-12 col-m-12 header-logo">
-					<img class="edit-button" src="../images/edit.png" onclick="openNav()" /><a href="http://www.upeast.com/"><img class="header-logo-image" src="../images/UPEAST/UPEAST LOGO vertical copy2.png" /></a>
+					<img class="edit-button" src="../images/edit.png" onclick="openNav()" /><a href="http://www.upeast.com/"><img class="header-logo-image" src="../<?php echo $header_logo ?>" /></a>
 					<a href="login-index.php" class="LogInButton"><span><b>Log In</b></span></a>
 
 					<div class="row header-logo">

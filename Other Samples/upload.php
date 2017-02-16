@@ -1,5 +1,5 @@
 <?php
-$target_dir = "Uploads/News and Weather Uploads/";
+$target_dir = "../Uploads/News and Weather Uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
@@ -37,7 +37,7 @@ if ($uploadOk == 0) {
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
         echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
-        $path = "Uploads/News and Weather Uploads/" . basename( $_FILES["fileToUpload"]["name"]);
+        $path = "../Uploads/News and Weather Uploads/" . basename( $_FILES["fileToUpload"]["name"]);
 
         $server = 'localhost';
         $username = 'root';
@@ -45,7 +45,7 @@ if ($uploadOk == 0) {
         $dbname = 'upeast';
 
         $conn = new mysqli($server, $username, $password, $dbname);
-        
+
         $insert = "INSERT INTO example(uploaded_images) VALUES('" . mysqli_real_escape_string($conn, $path) . "')";
         $result=mysqli_query($conn,$insert);
         if(!$conn->mysqli_query($insert))

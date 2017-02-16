@@ -38,15 +38,15 @@ h1
 
 .footer {
   margin-top: -4px;
-  background-color: #021e7a;
+  background-color: white;
   width: 100%;
-  background-color: #021e7a;
+  background-color: white;
   clear:both;
 }
 
 .footer-body {
   text-align: center;
-  color: white;
+  color: #021e7a;
   font-size: 14px;
   padding: 15px 30px;
   text-decoration: none;
@@ -54,7 +54,7 @@ h1
 
 .footer-body-middle {
   text-align: center;
-  color: white;
+  color: #021e7a;
   font-size: 14px;
   padding: 2.5% 30px;
   text-decoration: none;

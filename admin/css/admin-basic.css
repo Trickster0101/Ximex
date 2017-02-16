@@ -146,7 +146,16 @@ h1
   height: 100%;
 }
 
-.header-logo img {
+.edit-button {
+  z-index: 10000000;
+  position: absolute;
+  width: 4%;
+  height: 5%;
+  cursor: pointer;
+}
+
+.header-logo-image {
+  height: 20%;
   display: block;
   cursor: pointer;
 }
@@ -159,7 +168,11 @@ h1
 }
 
 .edit-button {
-  width: 1%;
+  z-index: 10000000;
+  position: absolute;
+  width: 4%;
+  height: 10%;
+  cursor: pointer;
 }
 
 .header-caption h2{
@@ -198,6 +211,7 @@ h1
   width: 100%;
   height: 10%;
   text-align: center;
+  transition: margin-left 0.5s;
 }
 /* Style the list */
 ul.topnav {

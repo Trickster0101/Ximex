@@ -11,7 +11,7 @@
 	<title>UpEast Security Agency</title>
 	<link rel="icon"  type="image/png" href="images/UPEAST/UPEAST LOGO vertical copy2.png" />
 	<!-- Sidebar Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/admin-website-panel.css?version=56" />
+	<link rel="stylesheet" type="text/css" href="css/admin-website-panel.css?version=70" />
   <!-- Header Style CSS -->
 	<link rel="stylesheet" type="text/css" href="css/admin-basic.css?version=55" />
 	<link rel='stylesheet' type='text/css' href='../css/Styles Php/basic.php?version=55' />
@@ -21,6 +21,8 @@
 	<link rel="stylesheet" type="text/css" href="../css/services.css?version=54" />
 	<!-- News and Events Style CSS -->
 	<link rel="stylesheet" type="text/css" href="../css/newsandevents.css?version=54" />
+	<!-- Client List Style CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/clients.css?version=53" />
 	<!-- Contact Us Style CSS -->
 	<link rel="stylesheet" type="text/css" href="../css/contact-us.css?version=54" />
 	<!-- Footer Style CSS -->
@@ -41,8 +43,24 @@
 		<form action="php/upload.php" method="post" enctype="multipart/form-data">
 			<ul class="ul-list">
 				<li><p style="color: white">Logo Image</p></li>
-				<li><input style="color: white" type="file" name="fileToUpload" id="fileToUpload"></li>
-				<li><input type="submit" value="Upload Image" name="submit"></li>
+				<li>
+					<label class="sidenav-buttons">
+					    <input class="upload-class" type="file" name="fileToUpload" id="fileToUpload" />
+					     Change Logo
+					</label>
+				</li>
+				<li>
+					<label class="sidenav-buttons">
+					    <input class="upload-class" type="file" name="fileToUpload" id="fileToUpload" />
+					     Upload Logo
+					</label>
+				</li>
+				<li>
+					<label class="save-publish">
+					    <input class="save-button" type="submit" name="submit">
+					     Save and Publish
+					</label>
+				</li>
 			</ul>
 		</form>
 	</div>
@@ -81,6 +99,7 @@
 					<li><a id="aboutus" class="tablinks"><b>COMPANY</b></a></li>
 					<li><a id="services" class="tablinks"><b>SERVICES</b></a></li>
 					<li><a id="news_event" class="tablinks"><b>NEWS AND EVENTS</b></a></li>
+					<li><a id="clients" class="tablinks"><b>CLIENTS</b></a></li>
 					<li><a id="contact_us" class="tablinks"><b>CONTACT US</b></a></li>
 					<li class="icon">
 						<a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
@@ -269,6 +288,83 @@
 			</div>
 		</div>
 		<!-- End of News and Events -->
+
+		<!-- Clients -->
+		<div id="client-list" class="row client-list" >
+			<div id="heading-client-list" class="col-12 col-m-12 heading-client-list">
+				<h1>CLIENTS</h1>
+			</div>
+
+			<div class="row clients-body-row">
+				<div class="col-4 col-m-4 clients-body">
+					<img class="image" src="../images/XDE LOGISTICS - orange  transparent SM.png">
+					<div class="div-overlay">
+						<div class="text">Xde Logistics</div>
+					</div>
+				</div>
+
+				<div class="col-4 col-m-4 clients-body">
+					<img class="image" src="../images/Clients/festivalalabang.jpg">
+					<div class="div-overlay">
+						<div class="text">Festival Supermall Inc.</div>
+					</div>
+				</div>
+
+				<div class="col-4 col-m-4 clients-body">
+					<img class="image" src="../images/Clients/foratagaytaymall.jpg">
+					<div class="div-overlay">
+						<div class="text">Fora Tagaytay Mall</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row clients-body-row">
+				<div class="col-4 col-m-4 clients-body">
+					<img class="image" src="../images/Clients/alamoresorts.png">
+					<div class="div-overlay">
+						<div class="text">Alamo Transport and Leasing Inc.</div>
+					</div>
+				</div>
+
+				<div class="col-4 col-m-4 clients-body">
+					<img class="image" src="../images/Clients/bfresorts.png">
+					<div class="div-overlay">
+						<div class="text">BF Resort Homeowners Association Inc. Village</div>
+					</div>
+				</div>
+
+				<div class="col-4 col-m-4 clients-body">
+					<img class="image" src="../images/Clients/lancastercavite.jpg">
+					<div class="div-overlay">
+						<div class="text">Lancaster New City</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row clients-body-row">
+				<div class="col-4 col-m-4 clients-body">
+					<img class="image" src="../images/Clients/bellefortestates.jpg">
+					<div class="div-overlay">
+						<div class="text">Bellefort Estates</div>
+					</div>
+				</div>
+
+				<div class="col-4 col-m-4 clients-body">
+					<img class="image" src="../images/XANTARA DEV -transparent.png">
+					<div class="div-overlay">
+						<div class="text">Xantara Dev Corporation</div>
+					</div>
+				</div>
+
+				<div class="col-4 col-m-4 clients-body">
+					<img class="image" src="../images/Clients/lancastercavite.jpg">
+					<div class="div-overlay">
+						<div class="text">Lancaster New City</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of Clients -->
 
 		<!-- Contact Us -->
 		<div id="contacts" class="row contacts" >

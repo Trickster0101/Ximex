@@ -114,7 +114,7 @@ body
 
 .sidenav h2 {
   text-align: center;
-  color: #B3B3B3;
+  color: white;
   padding: 5%;
   margin-bottom: 5%;
   font-variant: small-caps;
@@ -134,15 +134,15 @@ body
   font-size: 12px;
   font-variant: small-caps;
   letter-spacing: 2px;
-  color: #B3B3B3;
+  color: white;
   display: block;
   transition: 0.3s;
   font-weight: bold;
 }
 
 .sidenav a:hover, .offcanvas a:focus{
-  background-color: #ad8f73;
-  color: #676060;
+  background-color: #f2f2f2;
+  color: black;
   font-weight: bold;
 }
 

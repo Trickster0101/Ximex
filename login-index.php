@@ -12,7 +12,7 @@
   <title>UpEast Security Agency</title>
 	<link rel="icon"  type="image/png" href="images/UPEAST/UPEAST LOGO vertical copy2.png" />
   <!-- Log In CSS -->
-  <link rel="stylesheet" type="text/css" href="css/login-css/login-index.css" />
+  <link rel="stylesheet" type="text/css" href="css/login-css/login-index.css?version=51" />
 
 	<script src="js/jquery-3.1.1.min.js"></script>
 </head>

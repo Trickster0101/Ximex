@@ -1,6 +1,5 @@
 <?php
 	include '../php/database.php';
-	include '../php/fetchData.php';
 ?>
 
 <!DOCTYPE html>
@@ -11,21 +10,21 @@
 <head>
 	<title>UpEast Security Agency</title>
 	<link rel="icon"  type="image/png" href="images/UPEAST/UPEAST LOGO vertical copy2.png" />
-  <!-- Sidebar Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/admin-sidebar.css" />
+	<!-- Sidebar Style CSS -->
+	<link rel="stylesheet" type="text/css" href="css/admin-website-panel.css?version=56" />
   <!-- Header Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/admin-basic.css" />
-	<link rel='stylesheet' type='text/css' href='../php/db-styles.php' />
+	<link rel="stylesheet" type="text/css" href="css/admin-basic.css?version=55" />
+	<link rel='stylesheet' type='text/css' href='../css/Styles Php/basic.php?version=55' />
 	<!-- Company Style CSS -->
-	<link rel="stylesheet" type="text/css" href="../css/company.css" />
+	<link rel="stylesheet" type="text/css" href="../css/company.css?version=54" />
 	<!-- Services Style CSS -->
-	<link rel="stylesheet" type="text/css" href="../css/services.css" />
+	<link rel="stylesheet" type="text/css" href="../css/services.css?version=54" />
 	<!-- News and Events Style CSS -->
-	<link rel="stylesheet" type="text/css" href="../css/newsandevents.css" />
+	<link rel="stylesheet" type="text/css" href="../css/newsandevents.css?version=54" />
 	<!-- Contact Us Style CSS -->
-	<link rel="stylesheet" type="text/css" href="../css/contact-us.css" />
+	<link rel="stylesheet" type="text/css" href="../css/contact-us.css?version=54" />
 	<!-- Footer Style CSS -->
-	<link rel="stylesheet" type="text/css" href="../css/footer.css" />
+	<link rel="stylesheet" type="text/css" href="../css/footer.css?version=54" />
 
 	<script src="js/jquery-3.1.1.min.js"></script>
 
@@ -36,20 +35,30 @@
 </head>
 <body onLoad="showSlides(slideIndex);">
 
+	<!-- Header Sidebar -->
 	<div id="mySidenav" class="sidenav">
 	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	  <a href="#">About</a>
-	  <a href="#">Services</a>
-	  <a href="#">Clients</a>
-	  <a href="#">Contact</a>
+		<form action="php/upload.php" method="post" enctype="multipart/form-data">
+			<ul class="ul-list">
+				<li><p style="color: white">Logo Image</p></li>
+				<li><input style="color: white" type="file" name="fileToUpload" id="fileToUpload"></li>
+				<li><input type="submit" value="Upload Image" name="submit"></li>
+			</ul>
+		</form>
 	</div>
+	<!-- End of Header Sidebar -->
 
-  <div class="body-holder">
+  <div id="body-holder" class="body-holder">
 		<!-- Parallax Header -->
 		<div id="top-home" class="row parallax-container">
-		  <div class="parallax-container" style="background-image: url('../images/building_parallax6.jpg')">
+			<!-- Php code to fetch the header values -->
+			<?php include '../php/Header Php/fetch-header-background.php'; ?>
+			<?php include '../php/Header Php/fetch-header-logo.php'; ?>
+			<?php include '../php/Header Php/fetch-header-values.php'; ?>
+			<!----------------------------------------->
+		  <div class="parallax-container" style="background-image: url('../<?php echo $header_background_path ?>')">
 				<header class="col-12 col-m-12 header-logo">
-					<a href="http://www.upeast.com/"><img src="../images/UPEAST/UPEAST LOGO vertical copy2.png" /></a>
+					<img class="edit-button" src="../images/edit.png" onclick="openNav()" /><a href="http://www.upeast.com/"><img class="header-logo-image" src="../<?php echo $header_logo_path ?>" /></a>
 					<a href="login-index.php" class="LogInButton"><span><b>Log In</b></span></a>
 
 					<div class="row header-logo">
@@ -368,7 +377,7 @@
 		<!-- End of Footer -->
 	</div>
 	<script src="../js/scroll.js"></script>
-	<!--	<script src="js/animation.js"></script> -->
+	<script src="js/push-sidebar.js"></script>
 	<script src="../js/mvModal.js"></script>
 	<script src="../js/slideshow.js"></script>
 	<script src="../js/basic.js"></script>

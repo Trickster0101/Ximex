@@ -12,17 +12,17 @@
 	<title>UpEast Security Agency</title>
 	<link rel="icon"  type="image/png" href="images/UPEAST/UPEAST LOGO vertical copy2.png" />
   <!-- Header Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/basic.css" />
+	<link rel="stylesheet" type="text/css" href="css/basic.css?version=51" />
 	<!-- Company Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/company.css" />
+	<link rel="stylesheet" type="text/css" href="css/company.css?version=51" />
 	<!-- Services Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/services.css" />
+	<link rel="stylesheet" type="text/css" href="css/services.css?version=51" />
 	<!-- News and Events Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/newsandevents.css" />
+	<link rel="stylesheet" type="text/css" href="css/newsandevents.css?version=51" />
 	<!-- Contact Us Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/contact-us.css" />
+	<link rel="stylesheet" type="text/css" href="css/contact-us.css?version=51" />
 	<!-- Footer Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/footer.css" />
+	<link rel="stylesheet" type="text/css" href="css/footer.css?version=51" />
 
 	<script src="js/jquery-3.1.1.min.js"></script>
 

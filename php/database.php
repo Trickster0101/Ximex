@@ -2,7 +2,7 @@
 	$server = 'localhost';
 	$username = 'root';
 	$password = '';
-	$dbname = 'mydb';
+	$dbname = 'upeast';
 
 	$conn = new mysqli($server, $username, $password, $dbname);
 

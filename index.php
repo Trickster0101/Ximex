@@ -1,3 +1,6 @@
+<?php
+	require 'php/database.php';
+?>
 <!DOCTYPE html>
 
 <html>
@@ -7,42 +10,49 @@
 	<title>UpEast Security Agency</title>
 	<link rel="icon"  type="image/png" href="images/UPEAST/UPEAST LOGO vertical copy2.png" />
   <!-- Header Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/basic.css" />
+	<link rel="stylesheet" type="text/css" href="css/basic.css?version=53.1" />
+	<link rel='stylesheet' type='text/css' href='css/Styles Php/basic.php?version=53.1' />
 	<!-- Company Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/company.css" />
+	<link rel="stylesheet" type="text/css" href="css/company.css?version=53.1" />
 	<!-- Services Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/services.css" />
+	<link rel="stylesheet" type="text/css" href="css/services.css?version=53" />
 	<!-- News and Events Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/newsandevents.css" />
+	<link rel="stylesheet" type="text/css" href="css/newsandevents.css?version=53" />
 	<!-- Client List Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/clients.css" />
+	<link rel="stylesheet" type="text/css" href="css/clients.css?version=53" />
 	<!-- Contact Us Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/contact-us.css" />
+	<link rel="stylesheet" type="text/css" href="css/contact-us.css?version=53" />
 	<!-- Footer Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/footer.css" />
+	<link rel="stylesheet" type="text/css" href="css/footer.css?version=53" />
 
 	<script src="js/jquery-3.1.1.min.js"></script>
 
 </head>
 <body onLoad="showSlides(slideIndex);">
 	<!-- Parallax Header -->
-	<div id="top-home" class="row parallax-container">
-	  <div class="parallax-container" style="background-image: url('images/building_parallax6.jpg')">
-			<header class="col-12 col-m-12 header-logo">
-				<a href="http://www.upeast.com/"><!--<img class="edit-button" src="images/edit.png" />--><img class="header-logo-image" src="images/UPEAST/UPEAST LOGO vertical copy2.png" /></a>
+	<header id="top-home" class="row parallax-container">
+		<!-- Php code to fetch the header values -->
+		<?php include 'php/Header Php/fetch-header-background.php'; ?>
+		<?php include 'php/Header Php/fetch-header-logo.php'; ?>
+		<?php include 'php/Header Php/fetch-header-values.php'; ?>
+		<!----------------------------------------->
+
+	  <div class="parallax-container" style="background-image: url('<?php echo $header_background_path ?>')">
+			<div class="col-12 col-m-12 header-logo">
+				<a href="http://www.upeast.com/"><img class="header-logo-image" src="<?php echo $header_logo_path ?>" /></a>
 				<a href="login-index.php" class="LogInButton"><span><b>Log In</b></span></a>
 
 				<div class="row header-logo">
 					<div class="row header-logo">
 						<div class="col-12 col-m-12 header-caption">
-							<h2><!--<img class="edit-button" src="images/edit.png" />-->UPEAST Security Agency</h2>
-							<p style="text-align"><!--<img class="edit-button" src="images/edit.png" />-->"Where your security is our TOP priority"</p>
+							<h2><?php echo $header_title ?></h2>
+							<p style="text-align"><?php echo $header_sub_title ?></p>
 						</div>
 					</div>
 				</div>
-			</header>
+			</div>
 		</div>
-	</div>
+	</header>
 	<!-- End of Parallax Header -->
 
 		<!--Bottom Navigation Bar -->

@@ -1,5 +1,5 @@
 <?php
-$target_dir = "../Uploads/Header/";
+$target_dir = "../../Uploads/Header/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 0;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
@@ -53,7 +53,7 @@ if ($uploadOk == 0) {
   {
     echo $path;
     echo "Path saved";
-    header("location: ../admin/admin-index-2.php");
+    header("location: ../admin-index.php");
   }
 }
 

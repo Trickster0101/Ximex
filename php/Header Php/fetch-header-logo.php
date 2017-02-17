@@ -6,7 +6,7 @@
 	{
     while ($row = mysqli_fetch_array($result))
 		{
-      $header_logo = $row['header_logo_path'];
+      $header_logo_path = $row['header_logo_path'];
     }
   }
 ?>

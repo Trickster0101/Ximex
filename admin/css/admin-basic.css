@@ -149,13 +149,12 @@ h1
 .edit-button {
   z-index: 10000000;
   position: absolute;
-  width: 4%;
-  height: 4%;
+  width: 2%;
+  height: 2%;
   cursor: pointer;
 }
 
 .header-logo-image {
-  height: 20%;
   display: block;
   cursor: pointer;
 }

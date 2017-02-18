@@ -1,10 +1,10 @@
 <?php
-$target_dir = "../Uploads/Header/Header Logo/";
+$target_dir = "../Uploads/Header/Header Background/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 0;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 // Check if image file is a actual image or fake image
-if(isset($_POST["submit"])) {
+if(isset($_POST["submitHeaderBackground"])) {
   $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
   if($check !== false) {
       echo "File is an image - " . $check["mime"] . ".";
@@ -38,12 +38,12 @@ if ($uploadOk == 0) {
 
   $conn = new mysqli($server, $username, $password, $dbname);
 
-  $path = "Uploads/Header/Header Logo/" . basename( $_FILES["fileToUpload"]["name"]);
+  $path = "Uploads/Header/Header Background/" . basename( $_FILES["fileToUpload"]["name"]);
 
   $path =  mysqli_real_escape_string($conn, $path);
 
-  $select = "Update header_logo set is_active = 0 where is_active = 1;";
-  $select .= "Update header_logo set is_active = 1 where header_logo_path =  '$path'";
+  $select = "Update header_background set is_active = 0 where is_active = 1;";
+  $select .= "Update header_background set is_active = 1 where header_background_path =  '$path'";
 
   if(!$conn->multi_query($select))
   {

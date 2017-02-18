@@ -3,7 +3,12 @@
 ?>
 <!-- Header Sidebar -->
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="row">
+    <div class="col-12 col-m-12">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    </div>
+  </div>
+
   <ul class="ul-list">
     <li><p style="color: white">Logo Image</p></li>
     <li>
@@ -17,7 +22,7 @@
       </label>
     </li>
     <li>
-      <label class="sidenav-buttons">
+      <label class="sidenav-buttons" onclick="changeBackground()">
         Change Background
       </label>
     </li>

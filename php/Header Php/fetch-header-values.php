@@ -13,6 +13,8 @@
       $header_title_font_size = $row['header_title_font_size'];
       $header_logo_size = $row['header_logo_size'];
       $header_sub_title_font_size = $row['header_sub_title_font_size'];
+      $header_title_color = $row['header_title_color'];
+      $header_sub_title_color = $row['header_sub_title_color'];
     }
   }
 

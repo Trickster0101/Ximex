@@ -15,7 +15,6 @@
   padding: 5%;
   text-decoration: none;
   font-family: "Myriad";
-  font-size: 12px;
   font-variant: small-caps;
   letter-spacing: 2px;
   color: white;
@@ -47,6 +46,20 @@
   right: 0;
   font-size: 36px;
   margin-left: 50px;
+}
+
+.backbtn{
+  cursor: pointer;
+  position: absolute;
+  top: 1%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 input[type="file"] {
@@ -101,7 +114,9 @@ input[type="submit"]{
   font-weight: bold;
 }
 
-.sidenav input[type=text] {
+.sidenav input[type=text], .sidenav input[type=number] {
+  font-family: "Myriad";
+  font-weight: bold;
   width: 100%;
   padding: 12px 20px;
   box-sizing: border-box;
@@ -111,11 +126,17 @@ input[type="submit"]{
   outline: none;
 }
 
-.sidenav input[type=text]:focus {
+.sidenav input[type=color]{
+
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.sidenav input[type=text]:focus, .sidenav input[type=number]:focus, .sidenav input[type=color]:focus{
   border: 3px solid #555;
 }
 
-.sidenav input[type=text]:hover {
+.sidenav input[type=text]:hover, .sidenav input[type=number]:hover, .sidenav input[type=color]:hover {
   border: 3px solid #555;
 }
 

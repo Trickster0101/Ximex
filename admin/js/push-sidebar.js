@@ -14,6 +14,7 @@ function closeNav()
   document.getElementById("changeLogoSidenav").style.width = "0";
   document.getElementById("body-holder").style.marginLeft = "0";
   document.getElementById("changeHeaderCaption").style.width = "0";
+  document.getElementById("changeBackgroundSidenav").style.width = "0";
 
   document.getElementById("body-holder").style.width = "100%";
   document.getElementById("nav_bar").style.width = "100%";
@@ -24,7 +25,27 @@ function changeLogo()
   document.getElementById("changeLogoSidenav").style.width = "20%";
 }
 
+function changeLogoBack()
+{
+  document.getElementById("changeLogoSidenav").style.width = "0";
+}
+
+function changeBackground()
+{
+  document.getElementById("changeBackgroundSidenav").style.width = "20%";
+}
+
+function changeHeaderBackgroundBack()
+{
+  document.getElementById("changeBackgroundSidenav").style.width = "0";
+}
+
 function changeHeaderCaption()
 {
   document.getElementById("changeHeaderCaption").style.width = "20%";
+}
+
+function changeHeaderCaptionBack()
+{
+  document.getElementById("changeHeaderCaption").style.width = "0";
 }

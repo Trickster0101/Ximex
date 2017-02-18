@@ -101,6 +101,24 @@ input[type="submit"]{
   font-weight: bold;
 }
 
+.sidenav input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.sidenav input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+.sidenav input[type=text]:hover {
+  border: 3px solid #555;
+}
+
 .body-holder {
   transition: 0.5s;
 }

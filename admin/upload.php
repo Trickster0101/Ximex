@@ -1,5 +1,5 @@
 <?php
-$target_dir = "../../Uploads/Header/Header Logo";
+$target_dir = "../Uploads/Header/Header Logo/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 0;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
@@ -28,6 +28,7 @@ if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg
 // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == 0) {
   echo "Sorry, you need to upload the file first";
+  echo $target_file;
 // if everything is ok, try to upload file
 } else {
   $server = 'localhost';
@@ -37,7 +38,7 @@ if ($uploadOk == 0) {
 
   $conn = new mysqli($server, $username, $password, $dbname);
 
-  $path = "Uploads/Header/Header Logo" . basename( $_FILES["fileToUpload"]["name"]);
+  $path = "Uploads/Header/Header Logo/" . basename( $_FILES["fileToUpload"]["name"]);
 
   $path =  mysqli_real_escape_string($conn, $path);
 
@@ -53,7 +54,7 @@ if ($uploadOk == 0) {
   {
     echo $path;
     echo "Path saved";
-    header("location: ../admin-index.php");
+    header("location: admin-index.php");
   }
 }
 

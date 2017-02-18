@@ -11,7 +11,7 @@
 	<title>UpEast Security Agency</title>
 	<link rel="icon"  type="image/png" href="images/UPEAST/UPEAST LOGO vertical copy2.png" />
 	<!-- Sidebar Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/admin-website-panel.css?version=70" />
+	<link rel="stylesheet" type="text/css" href="css/admin-website-panel.css?version=90" />
   <!-- Header Style CSS -->
 	<link rel="stylesheet" type="text/css" href="css/admin-basic.css?version=55" />
 	<link rel='stylesheet' type='text/css' href='../css/Styles Php/basic.php?version=55' />
@@ -37,34 +37,11 @@
 </head>
 <body onLoad="showSlides(slideIndex);">
 
-	<!-- Header Sidebar -->
-	<div id="mySidenav" class="sidenav">
-	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<form action="php/upload.php" method="post" enctype="multipart/form-data">
-			<ul class="ul-list">
-				<li><p style="color: white">Logo Image</p></li>
-				<li>
-					<label class="sidenav-buttons">
-					    <input class="upload-class" type="file" name="fileToUpload" id="fileToUpload" />
-					     Change Logo
-					</label>
-				</li>
-				<li>
-					<label class="sidenav-buttons">
-					    <input class="upload-class" type="file" name="fileToUpload" id="fileToUpload" />
-					     Upload Logo
-					</label>
-				</li>
-				<li>
-					<label class="save-publish">
-					    <input class="save-button" type="submit" name="submit">
-					     Save and Publish
-					</label>
-				</li>
-			</ul>
-		</form>
-	</div>
-	<!-- End of Header Sidebar -->
+	<?php
+		include 'Sidebars/edit-header-sidebar.php';
+		include 'Sidebars/edit-header-logo-sidebar.php';
+		include 'Sidebars/edit-header-captions-sidebar.php';
+	?>
 
   <div id="body-holder" class="body-holder">
 		<!-- Parallax Header -->
@@ -76,8 +53,8 @@
 			<!----------------------------------------->
 		  <div class="parallax-container" style="background-image: url('../<?php echo $header_background_path ?>')">
 				<header class="col-12 col-m-12 header-logo">
-					<img class="edit-button" src="../images/edit.png" onclick="openNav()" /><a href="http://www.upeast.com/"><img class="header-logo-image" src="../<?php echo $header_logo_path ?>" /></a>
-					<a href="login-index.php" class="LogInButton"><span><b>Log In</b></span></a>
+					<a href="http://www.upeast.com/"><img class="header-logo-image" src="../<?php echo $header_logo_path ?>" /></a>
+					<a onclick="openNav()" class="LogInButton"><span><b>Edit Header</b></span></a>
 
 					<div class="row header-logo">
 						<div class="row header-logo">
@@ -116,6 +93,7 @@
 			<div class="row">
 				<div  class="col-12 col-m-12 body-company">
 					<h1 id="headerDiv">UPEAST Security Agency, Inc.</h1>
+					<!-- <a onclick="openNav()" class="LogInButton"><span><b>Edit Header</b></span></a> -->
 					<p style="text-align: center">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -473,7 +451,7 @@
 		<!-- End of Footer -->
 	</div>
 	<script src="../js/scroll.js"></script>
-	<script src="js/push-sidebar.js"></script>
+	<script src="js/push-sidebar.js?version=130"></script>
 	<script src="../js/mvModal.js"></script>
 	<script src="../js/slideshow.js"></script>
 	<script src="../js/basic.js"></script>

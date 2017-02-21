@@ -10,7 +10,7 @@
   </div>
 
   <ul class="ul-list">
-    <li><p style="color: white">Logo Image</p></li>
+    <li><p style="color: white">Header Settings</p></li>
     <li>
       <label class="sidenav-buttons" onclick="changeLogo()">
         Change Logo

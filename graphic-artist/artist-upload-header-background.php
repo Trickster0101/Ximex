@@ -1,5 +1,5 @@
 <?php
-$target_dir = "../Uploads/Header/Header Logo/";
+$target_dir = "../Uploads/Header/Header Background/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
@@ -36,32 +36,32 @@ if ($uploadOk == 0) {
 // if everything is ok, try to upload file
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
-        $path = "Uploads/Header/Header Logo/" . basename( $_FILES["fileToUpload"]["name"]);
+      echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+      $path = "Uploads/Header/Header Background/" . basename( $_FILES["fileToUpload"]["name"]);
 
-        $server = 'localhost';
-        $username = 'root';
-        $password = '';
-        $dbname = 'upeast';
+      $server = 'localhost';
+      $username = 'root';
+      $password = '';
+      $dbname = 'upeast';
 
-        $conn = new mysqli($server, $username, $password, $dbname);
+      $conn = new mysqli($server, $username, $password, $dbname);
 
-        $insert = "INSERT INTO header_logo(header_logo_path) VALUES('" . mysqli_real_escape_string($conn, $path) . "')";
-        $result=mysqli_query($conn,$insert);
-        if(!$conn->mysqli_query($insert))
-        {
-          echo "Path not saved";
-        }
-        else
-        {
-          echo "Path saved";
-        }
+      $insert = "INSERT INTO header_background(header_background_path) VALUES('" . mysqli_real_escape_string($conn, $path) . "')";
+      $result=mysqli_query($conn,$insert);
+      if($result = $conn->query($insert))
+      {
+        echo "Path saved";
+        header("location: admin-index.php");
+      }
+      else
+      {
+        echo "Path not saved";
+      }
     } else {
         echo "Sorry, there was an error uploading your file.";
     }
 }
 
 error_reporting(0);
-
 
 ?>

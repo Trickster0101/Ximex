@@ -9,9 +9,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 	<title>UpEast Security Agency</title>
-	<link rel="icon"  type="image/png" href="images/UPEAST/UPEAST LOGO vertical copy2.png" />
+	<link rel="icon"  type="image/png" href="../images/UPEAST/UPEAST LOGO vertical copy2.png" />
 	<!-- Sidebar Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/admin-website-panel.css?version=210" />
+	<link rel="stylesheet" type="text/css" href="css/admin-website-panel.css?version=250" />
   <!-- Header Style CSS -->
 	<link rel="stylesheet" type="text/css" href="css/admin-basic.css?version=55" />
 	<link rel='stylesheet' type='text/css' href='../css/Styles Php/basic.php?version=55' />

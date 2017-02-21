@@ -36,6 +36,10 @@
   font-weight: bold;
 }
 
+.sidenav::-webkit-scrollbar {
+  display: none;
+}
+
 .sidenav a:hover, .offcanvas a:focus{
   color: #f1f1f1;
 }

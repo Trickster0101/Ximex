@@ -10,8 +10,8 @@
 	<title>UpEast Security Agency</title>
 	<link rel="icon"  type="image/png" href="images/UPEAST/UPEAST LOGO vertical copy2.png" />
   <!-- Header Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/basic.css?version=53.1" />
-	<link rel='stylesheet' type='text/css' href='css/Styles Php/basic.php?version=53.1' />
+	<link rel="stylesheet" type="text/css" href="css/basic.css?version=100" />
+	<link rel='stylesheet' type='text/css' href='css/Styles Php/basic.php?version=7300' />
 	<!-- Company Style CSS -->
 	<link rel="stylesheet" type="text/css" href="css/company.css?version=53.1" />
 	<!-- Services Style CSS -->
@@ -208,43 +208,7 @@
 			<h1>LATEST UPDATES</h1>
 		</div>
 		<div class="row news-events-body">
-			<div class="col-12 col-m-12 articles">
-				<h2>Lorem Ipsum Dolor Sit Amet</h2>
-				<br>
-				<br>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-			</div>
-			<br>
-			<br>
-			<div class="col-12 col-m-12 articles">
-				<h2>Lorem Ipsum Dolor Sit Amet</h2>
-				<br>
-				<br>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-			</div>
-			<br>
-			<br>
-			<div class="col-12 col-m-12 articles">
-				<h2>Lorem Ipsum Dolor Sit Amet</h2>
-				<br>
-				<br>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-			</div>
+			<?php include 'php/Latest Updates/display-latest-updates.php'; ?>
 		</div>
 	</div>
 	<!-- End of News and Events -->

@@ -13,8 +13,8 @@
 	<!-- Sidebar Style CSS -->
 	<link rel="stylesheet" type="text/css" href="css/admin-website-panel.css?version=260" />
   <!-- Header Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/admin-basic.css?version=55" />
-	<link rel='stylesheet' type='text/css' href='../css/Styles Php/basic.php?version=55' />
+	<link rel="stylesheet" type="text/css" href="css/admin-basic.css?version=100" />
+	<link rel='stylesheet' type='text/css' href='../css/Styles Php/basic.php?version=7800' />
 	<!-- Company Style CSS -->
 	<link rel="stylesheet" type="text/css" href="../css/company.css?version=54" />
 	<!-- Services Style CSS -->

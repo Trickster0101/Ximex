@@ -27,7 +27,9 @@
 			<ul class="topnav">
 				<li><a href="header-background-pictures.php" class="borderTop">Header Background Pictures</a></li>
 				<li><a href="header-logo-pictures.php">Header Logo Pictures</a></li>
-      	<li><a href="content-pictures">Content Pictures</a></li>
+				<li><a href="mission-pictures.php">Mission Logo Pictures</a></li>
+				<li><a href="vision-pictures.php">Vision Logo Pictures</a></li>
+      	<li><a href="services-pictures.php">Services Pictures</a></li>
 			</ul>
     </nav>
 
@@ -41,7 +43,10 @@
 
 		<div class="row">
       <div class="col-12 col-m-12">
-        <button><a href="header-panel-uploads-logo.php">Upload Logo Picture</button>
+				<form action="artist-upload-header-logo.php" method="post" enctype="multipart/form-data">
+					<input class="upload-class" type="file" name="fileToUpload" id="fileToUpload" />
+					<input type="submit" value="Upload Image" name="submit">
+				</form>
       </div>
     </div>
 

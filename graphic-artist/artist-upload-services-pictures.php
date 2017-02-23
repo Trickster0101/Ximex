@@ -1,5 +1,5 @@
 <?php
-$target_dir = "../Uploads/Header/Header Background/";
+$target_dir = "../Uploads/Services/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
@@ -37,7 +37,7 @@ if ($uploadOk == 0) {
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
       echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
-      $path = "Uploads/Header/Header Background/" . basename( $_FILES["fileToUpload"]["name"]);
+      $path = "Uploads/Services/" . basename( $_FILES["fileToUpload"]["name"]);
 
       $server = 'localhost';
       $username = 'root';
@@ -46,8 +46,8 @@ if ($uploadOk == 0) {
 
       $conn = new mysqli($server, $username, $password, $dbname);
 
-      $insert = "INSERT INTO header_background(header_background_path) VALUES('" . mysqli_real_escape_string($conn, $path) . "');";
-      $insert .= "INSERT INTO logfiles(log_datetime, log_name, log_description) VALUES(Now(), 'ABMA', 'Added header background picture')";
+      $insert = "INSERT INTO services_pictures(services_path) VALUES('" . mysqli_real_escape_string($conn, $path) . "');";
+      $insert .= "INSERT INTO logfiles(log_datetime, log_name, log_description) VALUES(Now(), 'ABMA', 'Added services picture')";
 
       $result=mysqli_query($conn,$insert);
       if(!$conn->multi_query($insert))

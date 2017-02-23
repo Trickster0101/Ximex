@@ -27,7 +27,9 @@
 			<ul class="topnav">
 				<li><a href="header-background-pictures.php" class="borderTop">Header Background Pictures</a></li>
 				<li><a href="header-logo-pictures.php">Header Logo Pictures</a></li>
-      	<li><a href="content-pictures">Content Pictures</a></li>
+				<li><a href="mission-pictures.php">Mission Logo Pictures</a></li>
+				<li><a href="vision-pictures.php">Vision Logo Pictures</a></li>
+      	<li><a href="services-pictures.php">Services Pictures</a></li>
 			</ul>
     </nav>
 

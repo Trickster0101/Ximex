@@ -2,7 +2,7 @@
   include '../../php/database.php';
   include '../../php/Header Php/fetch-header-values.php';
   include '../../php/Header Php/fetch-header-logo.php';
-
+  
   header("Content-type: text/css; charset: UTF-8");
 ?>
 

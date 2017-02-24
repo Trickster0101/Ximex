@@ -1,4 +1,6 @@
 <?php
+  require "database.php";
+
   if(isset($_POST['Login']))
   {
     $username = $_POST['uname'];
@@ -13,8 +15,10 @@
       if($username == $row["user_name"] && $password == $row["user_password"]
       && $row["user_admin"] == 1 && $row["is_active"] == 1)
 			{
-        echo "USER FOUND";
-        header("location: admin/admin-panel.html");
+        // session_start();
+        $_SESSION['username'] = $username;
+        header("location: ../admin/admin-panel.php");
+        exit();
       }
       else
       {

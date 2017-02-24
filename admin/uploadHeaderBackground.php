@@ -55,6 +55,7 @@ if ($uploadOk == 0) {
     echo $path;
     echo "Path saved";
     header("location: admin-index.php");
+    exit();
   }
 }
 

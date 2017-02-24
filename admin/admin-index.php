@@ -1,4 +1,12 @@
 <?php
+	session_start();
+
+	if(!isset($_SESSION['username']))
+	{
+		header("location: error.php");
+		exit();
+	}
+
 	include '../php/database.php';
 ?>
 
@@ -11,10 +19,10 @@
 	<title>UpEast Security Agency</title>
 	<link rel="icon"  type="image/png" href="../images/UPEAST/UPEAST LOGO vertical copy2.png" />
 	<!-- Sidebar Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/admin-website-panel.css?version=260" />
+	<link rel="stylesheet" type="text/css" href="css/admin-website-panel.css?version=280" />
   <!-- Header Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/admin-basic.css?version=100" />
-	<link rel='stylesheet' type='text/css' href='../css/Styles Php/basic.php?version=7800' />
+	<link rel="stylesheet" type="text/css" href="css/admin-basic.css?version=800" />
+	<link rel='stylesheet' type='text/css' href='../css/Styles Php/basic.php?version=9100' />
 	<!-- Company Style CSS -->
 	<link rel="stylesheet" type="text/css" href="../css/company.css?version=54" />
 	<!-- Services Style CSS -->
@@ -54,15 +62,15 @@
 			<!----------------------------------------->
 		  <div class="parallax-container" style="background-image: url('../<?php echo $header_background_path ?>')">
 				<header class="col-12 col-m-12 header-logo">
-					<a href="http://www.upeast.com/"><img class="header-logo-image" src="../<?php echo $header_logo_path ?>" /></a>
 					<a onclick="openNav()" class="LogInButton"><span><b>Edit Header</b></span></a>
 
 					<div class="row header-logo">
-						<div class="row header-logo">
-							<div class="col-12 col-m-12 header-caption">
-								<h2><?php echo $header_title ?></h2>
-								<p style="text-align"><?php echo $header_sub_title ?></p>
+						<div class="col-12 col-m-12 header-caption">
+							<div class="col-5 col-m-5 header-logo-image">
+								<a href="http://www.upeast.com/"><img  src="../<?php echo $header_logo_path ?>" /></a>
 							</div>
+							<h2><?php echo $header_title ?></h2>
+							<p style="text-align"><?php echo $header_sub_title ?></p>
 						</div>
 					</div>
 				</header>

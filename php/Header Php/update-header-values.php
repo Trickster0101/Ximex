@@ -24,6 +24,7 @@
     }
     else {
       header("location: ../../admin/admin-index.php");
+      exit();
     }
   }
 ?>

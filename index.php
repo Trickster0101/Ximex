@@ -10,20 +10,20 @@
 	<title>UpEast Security Agency</title>
 	<link rel="icon"  type="image/png" href="images/UPEAST/UPEAST LOGO vertical copy2.png" />
   <!-- Header Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/basic.css?version=100" />
-	<link rel='stylesheet' type='text/css' href='css/Styles Php/basic.php?version=7300' />
+	<link rel="stylesheet" type="text/css" href="css/basic.css?version=290" />
+	<link rel='stylesheet' type='text/css' href='css/Styles Php/basic.php?version=8420' />
 	<!-- Company Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/company.css?version=53.1" />
+	<link rel="stylesheet" type="text/css" href="css/company.css?version=103.1" />
 	<!-- Services Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/services.css?version=53" />
+	<link rel="stylesheet" type="text/css" href="css/services.css?version=103" />
 	<!-- News and Events Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/newsandevents.css?version=53" />
+	<link rel="stylesheet" type="text/css" href="css/newsandevents.css?version=103" />
 	<!-- Client List Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/clients.css?version=53" />
+	<link rel="stylesheet" type="text/css" href="css/clients.css?version=103" />
 	<!-- Contact Us Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/contact-us.css?version=53" />
+	<link rel="stylesheet" type="text/css" href="css/contact-us.css?version=103" />
 	<!-- Footer Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/footer.css?version=53" />
+	<link rel="stylesheet" type="text/css" href="css/footer.css?version=103" />
 
 	<script src="js/jquery-3.1.1.min.js"></script>
 
@@ -39,15 +39,15 @@
 
 	  <div class="parallax-container" style="background-image: url('<?php echo $header_background_path ?>')">
 			<div class="col-12 col-m-12 header-logo">
-				<a href="http://www.upeast.com/"><img class="header-logo-image" src="<?php echo $header_logo_path ?>" /></a>
-				<a href="login-index.php" class="LogInButton"><span><b>Log In</b></span></a>
+				<a href="login-index.html" class="LogInButton"><span><b>Log In</b></span></a>
 
 				<div class="row header-logo">
-					<div class="row header-logo">
-						<div class="col-12 col-m-12 header-caption">
-							<h2><?php echo $header_title ?></h2>
-							<p style="text-align"><?php echo $header_sub_title ?></p>
+					<div class="col-12 col-m-12 header-caption">
+						<div class="col-5 col-m-5 header-logo-image">
+							<a href="http://www.upeast.com/"><img  src="../<?php echo $header_logo_path ?>" /></a>
 						</div>
+						<h2><?php echo $header_title ?></h2>
+						<p style="text-align"><?php echo $header_sub_title ?></p>
 					</div>
 				</div>
 			</div>
@@ -104,11 +104,11 @@
 
     <div class="row mv">
       <div class="col-6 col-m-6 mission">
-  			<img id="myBtn" src="images/MV1.png" onclick="openMissionModal()"/>
+  			<img id="myBtn" src="Uploads/Mission Logo/MV1.png" onclick="openMissionModal()"/>
       </div>
 
       <div class="col-6 col-m-6 vision">
-  			<img id="myBtn" class="mv-hover" src="images/MV2.png" onclick="openVisionModal()"/>
+  			<img id="myBtn" class="mv-hover" src="Uploads/Vision Logo/MV2.png" onclick="openVisionModal()"/>
       </div>
 
 
@@ -170,15 +170,15 @@
 
 			<div class="col-6 col-m-6 list-services">
 				<div class="mySlides fade">
-		      <img src="images/UPEAST TRAINING(FESTIVAL MALL)12-15-16-25.jpg" style="width:100%">
+		      <img src="Uploads/Services/UPEAST TRAINING(FESTIVAL MALL)12-15-16-25.jpg" style="width:100%">
 		    </div>
 
 				<div class="mySlides fade">
-		      <img src="images/UPEAST TRAINING(FESTIVAL MALL)12-15-16-91.jpg" style="width:100%">
+		      <img src="Uploads/Services/UPEAST TRAINING(FESTIVAL MALL)12-15-16-91.jpg" style="width:100%">
 		    </div>
 
 				<div class="mySlides fade">
-		      <img src="images/UPEAST TRAINING(FESTIVAL MALL)12-15-16-122.jpg" style="width:100%">
+		      <img src="Uploads/Services/UPEAST TRAINING(FESTIVAL MALL)12-15-16-122.jpg" style="width:100%">
 		    </div>
 
 				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -189,13 +189,13 @@
 		    </div>
 
 				<div class="column">
-		      <img class="demo cursor" src="images/UPEAST TRAINING(FESTIVAL MALL)12-15-16-25.jpg" style="width:100%" onclick="currentSlide(1)">
+		      <img class="demo cursor" src="Uploads/Services/UPEAST TRAINING(FESTIVAL MALL)12-15-16-25.jpg" style="width:100%" onclick="currentSlide(1)">
 		    </div>
 		    <div class="column">
-		      <img class="demo cursor" src="images/UPEAST TRAINING(FESTIVAL MALL)12-15-16-91.jpg" style="width:100%" onclick="currentSlide(2)">
+		      <img class="demo cursor" src="Uploads/Services/UPEAST TRAINING(FESTIVAL MALL)12-15-16-91.jpg" style="width:100%" onclick="currentSlide(2)">
 		    </div>
 		    <div class="column">
-		      <img class="demo cursor" src="images/UPEAST TRAINING(FESTIVAL MALL)12-15-16-122.jpg" style="width:100%" onclick="currentSlide(3)">
+		      <img class="demo cursor" src="Uploads/Services/UPEAST TRAINING(FESTIVAL MALL)12-15-16-122.jpg" style="width:100%" onclick="currentSlide(3)">
 		    </div>
 			</div>
 		</div>

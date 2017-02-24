@@ -48,13 +48,14 @@ if ($uploadOk == 0) {
   if(!$conn->multi_query($select))
   {
     echo $path;
-    echo "Path not saved";
+    echo "Path not saved" .mysqli_error($conn);
   }
   else
   {
     echo $path;
     echo "Path saved";
     header("location: admin-index.php");
+    exit();
   }
 }
 

@@ -2,7 +2,7 @@
   include '../../php/database.php';
   include '../../php/Header Php/fetch-header-values.php';
   include '../../php/Header Php/fetch-header-logo.php';
-  
+
   header("Content-type: text/css; charset: UTF-8");
 ?>
 
@@ -16,6 +16,19 @@
   color: <?php echo $header_sub_title_color; ?>;
 }
 
-.header-logo-image{
-  height: <?php echo $header_logo_size; ?>%;
+@media only screen and (min-width: 600px) {
+  .header-logo-image img{
+    max-width: <?php echo $header_logo_size ?>%;
+    left: 0;
+    cursor: pointer;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header-logo-image img{
+    max-width: <?php echo $header_logo_size ?>%;
+    left: 0;
+    cursor: pointer;
+    height: auto;
+  }
 }

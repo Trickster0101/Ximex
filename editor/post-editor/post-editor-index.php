@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 	<title>UpEast Security Agency</title>
-	<link rel="icon"  type="image/png" href="../images/UPEAST/UPEAST LOGO vertical copy2.png" />
+	<link rel="icon"  type="image/png" href="../../images/UPEAST/UPEAST LOGO vertical copy2.png" />
   <!-- Sidebar Style CSS -->
 	<link rel="stylesheet" type="text/css" href="../css/editor-panel.css?version=10" />
   <!-- News and Events Style CSS -->

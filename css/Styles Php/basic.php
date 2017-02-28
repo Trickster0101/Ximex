@@ -16,6 +16,10 @@
   color: <?php echo $header_sub_title_color; ?>;
 }
 
+.topLeft {
+  <?php echo $header_position; ?>
+}
+
 @media only screen and (min-width: 600px) {
   .header-logo-image img{
     max-width: <?php echo $header_logo_size ?>%;

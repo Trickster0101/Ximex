@@ -28,6 +28,35 @@
         <input class="inputs" type="text" name="headerSubTitle" value="<?php echo $header_sub_title ?>">
       </li>
       <li>
+        <label class="sidenav-buttons">Header Position</label>
+      </li>
+      <li>
+        <label class="sidenav-buttons">Top Left
+          <input class="inputs" type="radio" name="position" value="top: 2%; left: 2%;" <?php if($header_position == 'top: 2%; left: 2%;') { echo 'checked'; } else { echo ''; } ?>>
+        </label>
+      </li>
+      <li>
+        <label class="sidenav-buttons">Top Right
+          <input class="inputs" type="radio" name="position" value="top: 2%; right: 2%;" <?php if($header_position == 'top: 2%; right: 2%;') { echo 'checked'; } else { echo ''; } ?>>
+        </label>
+      </li>
+      <li>
+        <label class="sidenav-buttons">Bottom Left
+          <input class="inputs" type="radio" name="position" value="bottom: 10%; left: 2%;" <?php if($header_position == 'bottom: 10%; left: 2%;') { echo 'checked'; } else { echo ''; } ?>>
+        </label>
+      </li>
+      <li>
+        <label class="sidenav-buttons">Bottom Right
+          <input class="inputs" type="radio" name="position" value="bottom: 10%; right: 2%;" <?php if($header_position == 'bottom: 10%; right: 2%;') { echo 'checked'; } else { echo ''; } ?>>
+        </label>
+      </li>
+      <li>
+        <label class="sidenav-buttons">Center
+          <input class="inputs" type="radio" name="position" value="top: 50%; left: 50%; transform: translate(-50%, -50%);" <?php if($header_position == 'top: 50%; left: 50%; transform: translate(-50%, -50%);') { echo 'checked'; } else { echo ''; } ?>>
+        </label>
+      </li>
+
+      <li>
         <label class="sidenav-buttons">Header Title Font Size</label>
         <input class="inputs" type="number" name="headerSubTitleFontSize" value="<?php echo $header_sub_title_font_size ?>">
       </li>

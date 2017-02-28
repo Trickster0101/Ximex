@@ -10,8 +10,8 @@
 	<title>UpEast Security Agency</title>
 	<link rel="icon"  type="image/png" href="images/UPEAST/UPEAST LOGO vertical copy2.png" />
   <!-- Header Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/basic.css?version=290" />
-	<link rel='stylesheet' type='text/css' href='css/Styles Php/basic.php?version=8420' />
+	<link rel="stylesheet" type="text/css" href="css/basic.css?version=340" />
+	<link rel='stylesheet' type='text/css' href='css/Styles Php/basic.php?version=8440' />
 	<!-- Company Style CSS -->
 	<link rel="stylesheet" type="text/css" href="css/company.css?version=103.1" />
 	<!-- Services Style CSS -->
@@ -46,9 +46,10 @@
 						<div class="col-5 col-m-5 header-logo-image">
 							<a href="http://www.upeast.com/"><img  src="../<?php echo $header_logo_path ?>" /></a>
 						</div>
-						<h2><?php echo $header_title ?></h2>
-						<p style="text-align"><?php echo $header_sub_title ?></p>
-					</div>
+						<div class="topLeft">
+							<h2><?php echo $header_title ?></h2>
+							<p style="text-align"><?php echo $header_sub_title ?></p>
+						</div>
 				</div>
 			</div>
 		</div>

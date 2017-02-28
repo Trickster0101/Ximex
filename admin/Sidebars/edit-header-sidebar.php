@@ -12,18 +12,23 @@
   <ul class="ul-list">
     <li><p style="color: white">Header Settings</p></li>
     <li>
-      <label class="sidenav-buttons" onclick="changeLogo()">
-        Change Logo
-      </label>
-    </li>
-    <li>
       <label class="sidenav-buttons" onclick="changeHeaderCaption()">
         Edit Header Captions
       </label>
     </li>
     <li>
+      <label class="sidenav-buttons" onclick="changeLogo()">
+        Change Logo
+      </label>
+    </li>
+    <li>
       <label class="sidenav-buttons" onclick="changeBackground()">
         Change Background
+      </label>
+    </li>
+    <li>
+      <label class="sidenav-buttons" onclick="changeBackground()">
+        Change Navigation Bar
       </label>
     </li>
   </ul>

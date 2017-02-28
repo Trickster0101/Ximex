@@ -10,6 +10,7 @@
       //Header
       $header_title = $row['header_title'];
       $header_sub_title = $row['header_sub_title'];
+      $header_position = $row['header_position'];
       $header_title_font_size = $row['header_title_font_size'];
       $header_sub_title_font_size = $row['header_sub_title_font_size'];
       $header_title_color = $row['header_title_color'];

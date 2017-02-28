@@ -1,12 +1,6 @@
 <?php
 	session_start();
 
-	if(!isset($_SESSION['username']))
-	{
-		header("location: error.php");
-		exit();
-	}
-
 	include '../php/database.php';
 ?>
 
@@ -19,10 +13,10 @@
 	<title>UpEast Security Agency</title>
 	<link rel="icon"  type="image/png" href="../images/UPEAST/UPEAST LOGO vertical copy2.png" />
 	<!-- Sidebar Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/admin-website-panel.css?version=280" />
+	<link rel="stylesheet" type="text/css" href="css/admin-website-panel.css?version=390" />
   <!-- Header Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/admin-basic.css?version=800" />
-	<link rel='stylesheet' type='text/css' href='../css/Styles Php/basic.php?version=9100' />
+	<link rel="stylesheet" type="text/css" href="css/admin-basic.css?version=840" />
+	<link rel='stylesheet' type='text/css' href='../css/Styles Php/basic.php?version=9200' />
 	<!-- Company Style CSS -->
 	<link rel="stylesheet" type="text/css" href="../css/company.css?version=54" />
 	<!-- Services Style CSS -->
@@ -48,6 +42,8 @@
 	<?php
 		include 'Sidebars/edit-header-sidebar.php';
 		include 'Sidebars/edit-header-logo-sidebar.php';
+		include 'Sidebars/edit-header-logo-picture.php';
+		include 'Sidebars/edit-header-logo-size.php';
 		include 'Sidebars/edit-header-captions-sidebar.php';
 		include 'Sidebars/edit-header-background-sidebar.php';
 	?>
@@ -69,8 +65,10 @@
 							<div class="col-5 col-m-5 header-logo-image">
 								<a href="http://www.upeast.com/"><img  src="../<?php echo $header_logo_path ?>" /></a>
 							</div>
-							<h2><?php echo $header_title ?></h2>
-							<p style="text-align"><?php echo $header_sub_title ?></p>
+							<div class="topLeft">
+								<h2><?php echo $header_title ?></h2>
+								<p style="text-align"><?php echo $header_sub_title ?></p>
+							</div>
 						</div>
 					</div>
 				</header>
@@ -460,7 +458,7 @@
 		<!-- End of Footer -->
 	</div>
 	<script src="../js/scroll.js"></script>
-	<script src="js/push-sidebar.js?version=150"></script>
+	<script src="js/push-sidebar.js?version=170"></script>
 	<script src="../js/mvModal.js"></script>
 	<script src="../js/slideshow.js"></script>
 	<script src="../js/basic.js"></script>

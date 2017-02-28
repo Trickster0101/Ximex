@@ -12,22 +12,18 @@
     </div>
   </div>
 
-  <form action="uploadHeaderLogo.php" method="post" enctype="multipart/form-data">
-    <ul class="ul-list">
-      <li><p style="color: white">Logo Image</p></li>
-      <li>
-        <label class="sidenav-buttons">
-            <input class="upload-class" type="file" name="fileToUpload" id="fileToUpload" />
-             Choose Logo
-        </label>
-      </li>
-      <li>
-        <label class="save-publish">
-            <input class="save-button" type="submit" name="submitHeaderLogo">
-             Save and Publish
-        </label>
-      </li>
-    </ul>
-  </form>
+  <ul class="ul-list">
+    <li><p style="color: white">Logo Image</p></li>
+    <li>
+      <label class="sidenav-buttons" onclick="changeLogoPicture ()">
+        Change Header Logo
+      </label>
+    </li>
+    <li>
+      <label class="sidenav-buttons" onclick="changeLogoSize()">
+        Change Header Logo Size
+      </label>
+    </li>
+  </ul>
 </div>
 <!-- End of Header Sidebar -->

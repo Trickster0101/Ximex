@@ -19,7 +19,7 @@
 	<!-- News and Events Style CSS -->
 	<link rel="stylesheet" type="text/css" href="css/newsandevents.css?version=103" />
 	<!-- Client List Style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/clients.css?version=103" />
+	<link rel="stylesheet" type="text/css" href="css/clients.css?version=156" />
 	<!-- Contact Us Style CSS -->
 	<link rel="stylesheet" type="text/css" href="css/contact-us.css?version=103" />
 	<!-- Footer Style CSS -->

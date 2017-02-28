@@ -24,7 +24,7 @@
 	<!-- News and Events Style CSS -->
 	<link rel="stylesheet" type="text/css" href="../css/newsandevents.css?version=54" />
 	<!-- Client List Style CSS -->
-	<link rel="stylesheet" type="text/css" href="../css/clients.css?version=53" />
+	<link rel="stylesheet" type="text/css" href="../css/clients.css?version=100" />
 	<!-- Contact Us Style CSS -->
 	<link rel="stylesheet" type="text/css" href="../css/contact-us.css?version=54" />
 	<!-- Footer Style CSS -->

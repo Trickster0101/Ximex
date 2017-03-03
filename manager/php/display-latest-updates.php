@@ -6,7 +6,7 @@
 
   $conn = new mysqli($server, $username, $password, $dbname);
 
-  $select = "select * from latest_updates where is_active = 1 && is_approved = 1";
+  $select = "select * from latest_updates where is_active = 1 && is_approved = 1 ORDER BY datetime_log DESC";
   $result=mysqli_query($conn,$select);
 
   if ($result->num_rows > 0)
@@ -23,8 +23,8 @@
         echo "<p>";
           echo $row['updates_content'];
         echo "</p>";
-        echo "<button><a href='../post-editor/edit-latest-updates.php?updates_id=$row[updates_id]'>EDIT</a></button>";
-        echo "<button href='../edit-latest-updates.php?updates_id=$row[updates_id]'>EDIT</button>";
+        echo "<button><a href='../manage-post/edit-current-post.php?updates_id=$row[updates_id]'>EDIT</a></button>";
+        echo "<button><a href='../manage-post/remove-current-post.php?updates_id=$row[updates_id]'>REMOVE</a></button>";
       echo "</div>";
       echo "<br>";
       echo "<br>";

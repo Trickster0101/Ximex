@@ -15,15 +15,15 @@
     $title = mysqli_real_escape_string($conn, $title);
     $content = mysqli_real_escape_string($conn, $content);
 
-    $query = "INSERT INTO editted_updates(updates_header, updates_content, ref_no) VALUES('$title', '$content', '$ref_no');";
-    $query .= "INSERT INTO logfiles(log_datetime, log_name, log_description) VALUES(Now(), 'Editor', 'Edited a post')";
+    $query = "Update latest_updates set updates_header = '$title', updates_content = '$content' where updates_id = '$ref_no';";
+    $query .= "INSERT INTO logfiles(log_datetime, log_name, log_description) VALUES(Now(), 'Manager', 'Updated post')";
 
     if(!$conn->multi_query($query))
     {
-      echo "Insert and Update function unsuccessful";
+      echo "Insert and Update function unsuccessful" . mysqli_error($conn);
     }
     else {
-      header("location: ../post-editor/post-editor-index.php");
+      header("location: ../manage-post/view-current-post.php");
     }
   }
 ?>

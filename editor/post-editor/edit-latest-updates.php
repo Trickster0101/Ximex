@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 	<title>UpEast Security Agency</title>
-	<link rel="icon"  type="image/png" href="../images/UPEAST/UPEAST LOGO vertical copy2.png" />
+	<link rel="icon"  type="image/png" href="../../images/UPEAST/UPEAST LOGO vertical copy2.png" />
   <!-- Sidebar Style CSS -->
 	<link rel="stylesheet" type="text/css" href="../css/editor-panel.css?version=10" />
 	<!-- Form Style CSS -->
@@ -30,8 +30,8 @@
 
 			<ul class="topnav">
 				<li><a href="add-latest-updates.html" class="borderTop">Add Latest Updates</a></li>
-				<li><a href="">Edit Updates</a></li>
-				<li><a href="">Remove Updates</a></li>
+				<li><a href="post-editor-index.php">Edit Updates</a></li>
+				<li><a href="#">Log Out</a></li>
 			</ul>
     </nav>
 

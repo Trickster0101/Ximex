@@ -6,26 +6,16 @@
 
   $conn = new mysqli($server, $username, $password, $dbname);
 
-  $select = "select * from latest_updates where is_approved = 1 && is_active = 1 ORDER BY datetime_log DESC";
+  $select = "select * from latest_updates where updates_id = $_GET[updates_id]";
   $result=mysqli_query($conn,$select);
 
   if ($result->num_rows > 0)
   {
     while ($row = mysqli_fetch_array($result))
     {
+      $updates_id = $row['updates_id'];
       $title = $row['updates_header'];
       $content = $row['updates_content'];
-
-      echo "<div class='col-12 col-m-12 articles'>";
-        echo "<h2>$row[updates_header]</h2>";
-        echo "<br>";
-        echo "<br>";
-        echo "<p>";
-          echo $row[updates_content];
-        echo "</p>";
-      echo "</div>";
-      echo "<br>";
-      echo "<br>";
     }
   }
   else {

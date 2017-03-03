@@ -7,9 +7,7 @@
 	<title>UpEast Security Agency</title>
 	<link rel="icon"  type="image/png" href="../../images/UPEAST/UPEAST LOGO vertical copy2.png" />
   <!-- Sidebar Style CSS -->
-	<link rel="stylesheet" type="text/css" href="../css/editor-panel.css?version=10" />
-  <!-- News and Events Style CSS -->
-  <link rel="stylesheet" type="text/css" href="../../css/newsandevents.css?version=53" />
+	<link rel="stylesheet" type="text/css" href="css/manager-panel.css?version=10" />
 
 	<script src="js/jquery-3.1.1.min.js"></script>
 
@@ -25,8 +23,10 @@
 	    </div>
 
 			<ul class="topnav">
-				<li><a href="add-latest-updates.html" class="borderTop">Add Latest Updates</a></li>
-				<li><a href="post-editor-index.php">Edit Updates</a></li>
+				<li><a href="manage-post/view-current-post.php" class="borderTop">View Current Posts</a></li>
+				<li><a href="manage-post/view-pending-post.php">View Pending Posts</a></li>
+				<li><a href="manage-post/add-latest-post.php">Add Post</a></li>
+				<li><a href="manage-post/view-archives.php">Archives</a></li>
 				<li><a href="#">Log Out</a></li>
 			</ul>
     </nav>
@@ -39,16 +39,6 @@
     </header>
     <!-- End of Admin Panel Header -->
 
-		<!-- Latest Updates -->
-    <div id="news-events" class="row news-events" >
-  		<div id="heading-news-events" class="col-12 col-m-12 heading-news-events">
-  			<h1>LATEST UPDATES</h1>
-  		</div>
-  		<div class="row news-events-body">
-  			<?php include '../php/display-latest-updates.php'; ?>
-  		</div>
-  	</div>
-  	<!-- End of Latest Updates -->
   </div>
 </body>
 

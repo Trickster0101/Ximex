@@ -14,16 +14,15 @@
     $title = mysqli_real_escape_string($conn, $title);
     $content = mysqli_real_escape_string($conn, $content);
 
-    $query = "INSERT INTO latest_updates(updates_header, updates_content, is_approved, is_active) VALUES('$title', '$content', 0, 1);";
-    $query .= "INSERT INTO logfiles(log_datetime, log_name, log_description) VALUES(Now(), 'Editor', 'Added post')";
+    $query = "INSERT INTO latest_updates(updates_header, updates_content, datetime_log, is_approved, is_active) VALUES('$title', '$content', NOW(), 1, 1);";
+    $query .= "INSERT INTO logfiles(log_datetime, log_name, log_description) VALUES(Now(), 'Manager', 'Added post')";
 
     if(!$conn->multi_query($query))
     {
-      echo "Insert and Update function unsuccessful";
+      echo "Insert and Update function unsuccessful" . mysqli_error($conn);
     }
     else {
-      header("location: ../post-editor/post-editor-index.php");
-      exit();
+      header("location: ../manage-post/view-current-post.php");
     }
   }
 ?>

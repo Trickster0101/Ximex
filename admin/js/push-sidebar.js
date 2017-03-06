@@ -17,6 +17,7 @@ function closeNav()
   document.getElementById("body-holder").style.marginLeft = "0";
   document.getElementById("changeHeaderCaption").style.width = "0";
   document.getElementById("changeBackgroundSidenav").style.width = "0";
+  document.getElementById("changeHeaderNavbar").style.width = "0";
 
   document.getElementById("body-holder").style.width = "100%";
   document.getElementById("nav_bar").style.width = "100%";
@@ -70,4 +71,14 @@ function changeHeaderCaption()
 function changeHeaderCaptionBack()
 {
   document.getElementById("changeHeaderCaption").style.width = "0";
+}
+
+function changeHeaderNavbar()
+{
+  document.getElementById("changeHeaderNavbar").style.width = "20%";
+}
+
+function changeHeaderNavbarBack()
+{
+  document.getElementById("changeHeaderNavbar").style.width = "0";
 }

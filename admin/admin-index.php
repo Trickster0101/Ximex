@@ -46,6 +46,7 @@
 		include 'Sidebars/edit-header-logo-size.php';
 		include 'Sidebars/edit-header-captions-sidebar.php';
 		include 'Sidebars/edit-header-background-sidebar.php';
+		include 'Sidebars/edit-header-navbar.php';
 	?>
 
   <div id="body-holder" class="body-holder">
@@ -458,7 +459,7 @@
 		<!-- End of Footer -->
 	</div>
 	<script src="../js/scroll.js"></script>
-	<script src="js/push-sidebar.js?version=170"></script>
+	<script src="js/push-sidebar.js?version=190"></script>
 	<script src="../js/mvModal.js"></script>
 	<script src="../js/slideshow.js"></script>
 	<script src="../js/basic.js"></script>

@@ -6,7 +6,7 @@
 
   $conn = new mysqli($server, $username, $password, $dbname);
 
-  $select = "select * from latest_updates where is_active = 1 && is_approved = 1";
+  $select = "select * from latest_updates where is_active = 1 && is_approved = 1 ORDER BY datetime_log DESC";
   $result=mysqli_query($conn,$select);
 
   if ($result->num_rows > 0)

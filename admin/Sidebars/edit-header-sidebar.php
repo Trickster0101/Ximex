@@ -27,7 +27,7 @@
       </label>
     </li>
     <li>
-      <label class="sidenav-buttons" onclick="changeBackground()">
+      <label class="sidenav-buttons" onclick="changeHeaderNavbar()">
         Change Navigation Bar
       </label>
     </li>
